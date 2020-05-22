@@ -262,7 +262,7 @@
     minDisplayTime: 2000,
     initialDelay: 0,
     in: {
-      effect: 'fadeInLeftBig',
+      effect: 'wobble',
       delayScale: 1.5,
       delay: 50,
       sync: false,
@@ -271,7 +271,7 @@
       callback: function () {}
     },
     out: {
-      effect: 'hinge',
+      effect: 'tada',
       delayScale: 1.5,
       delay: 50,
       sync: false,

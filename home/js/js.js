@@ -6,7 +6,11 @@ AOS.init({
 
 animation().init();
   
-  
+$('.tlt').textillate({ 
+    in: { effect: 'splat' },
+    out: { effect: 'foldUnfold', sync: true },
+    loop: true
+  });
 
 // $(function () {
 //     new Swiper('.swiper-container02', {
