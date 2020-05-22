@@ -1,0 +1,484 @@
+
+
+/* 로고 깜빡이 키는거 */
+.blinking{
+	-webkit-animation:blink 1.5s ease-in-out infinite alternate;
+	-moz-animation:blink 1.5s ease-in-out infinite alternate;
+	animation:blink 1.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+@-moz-keyframes blink{
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+@keyframes blink{
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+
+
+
+
+
+
+
+
+
+#section01{
+	width:100%;
+    background:url('../img/long_line.png');
+    background-color: #242424;
+}
+	/* .main-img{width: 100%; height: 606px url(../img/main_image.jpg) top center no-repeat;} */
+
+	.logo{
+		padding-top: 2.5%;
+        padding-left: 16.8%;
+        position: absolute;
+		
+  }
+  
+
+  .site-title.fixedtxt{
+    background-color:#000000;
+    }
+
+
+
+	#section01 p{
+		color: #FFF;
+		font-size: 1.6rem;
+    padding-top: 8%;
+		padding-left: 16.8%;
+		display: block;
+        font-family: 'Book Antiqua';
+
+		
+	}
+	.bottom-line{
+		padding-left: 16.8%;
+		
+	}
+	.container-main h1{
+		color: #FFF;
+		font-size: 4rem;
+		font-family: 'Book Antiqua','bold';
+		padding-left: 16.8%;
+		padding-top: 10%;
+		position: absolute;
+	}
+	.main-img{
+
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 16.8%;
+        margin-top: -2%
+        
+    }
+    
+    .intro p{
+        
+        color: #FFF;
+        font-family: 'Noto Sans CJK KR','Regular';
+        text-align: right;
+        right: 16.8%;
+        margin-top: -6%;
+        position: relative;
+        line-height: 35px;
+        padding-bottom: 10%;
+    }
+    .menu_box {
+      width: 100%;
+      height: 90px;
+      color: #FFF;
+      position: fixed;
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      z-index: 9999999;
+  }
+    
+    /* .fixed{
+      background:rgba(0,0,0,0.5); transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out;} */
+    
+      .logo a {
+          font-size: 46px;
+          color: #FFF;
+          font-family: 'Noto Sans CJK KR','Regular';
+          text-decoration: none;
+      }
+  
+      .menu_box>ul {
+              display: flex;
+              justify-content: flex-end;
+              padding-right: 16.8%;
+              position: relative;
+              padding-top: 2.5%;
+  
+      }
+        
+        /* .menu_box li{
+          float:left; text-align:center;}
+          
+          .menu_box li a{
+            text-decoration:none; color:rgb(109, 100, 100); font-family: 'Open Sans',Arial,Helvetica,sans-serif; font-size:14px;} */
+            
+            /**메뉴부분 마우스 오버시 색상 **/
+            .menu_box li a:hover {
+                border-top: 2px solid #FFF;
+                padding-top: 40px;
+                color: #FFF;
+            }
+  
+            /* .menu_box li:nth-child(2) a:hover {
+                border-top: 2px solid #6FF;
+                padding-top: 40px;
+                color: #6FF;
+            }
+  
+            .menu_box li:nth-child(3) a:hover {
+                border-top: 2px solid #9F0;
+                padding-top: 40px;
+                color: #9F0;
+            }
+  
+            .menu_box li:nth-child(4) a:hover {
+                border-top: 2px solid #F33;
+                padding-top: 40px;
+                color: #F33;
+            }
+  
+            .menu_box li:nth-child(5) a:hover {
+                border-top: 2px solid #FC0;
+                padding-top: 40px;
+                color: #FC0;
+            } */
+  
+  
+
+
+
+    /* url(../img/home-banner.jpg) top center no-repeat */
+
+
+
+
+
+
+
+
+
+
+    
+#section02 {
+    width: 100%;
+  
+    background: url('../img/long_line.png');
+    background-color:#242424;
+    position: relative;
+
+}
+  
+.container-slide{
+  width: 68.8%;
+  /* padding-left: 17.8%; */
+  margin: 0 auto;
+}
+.row{
+  display: flex;
+
+}
+
+
+.slider-main{
+  margin: 0 auto;
+  
+}
+
+/* .opacity{
+    width: 100%;
+    background: #000000;
+    opacity: 80%;
+    height:800px; 
+    position: absolute;
+
+} */
+
+
+
+/* 시험 */
+
+
+
+
+
+
+
+
+
+
+/* 시험끝 */
+
+
+
+
+
+
+.bg1{
+  width: 30%;
+  background: url('../img/img01.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  margin-top: 0%;
+  
+    
+}
+
+
+
+
+.bg2{
+  width:30%;
+  background: url('../img/img02.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  margin-top: 5%;
+}
+.bg3{
+  width: 30%;
+  background: url('../img/img03.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  margin-top: 10%;
+}
+
+/* .box-down{
+  height: 250px;
+  width: 250px;
+  background: black;
+  margin: 15px;
+  float:left;
+} */
+
+
+
+
+/* #your-div {
+  background: url('image.jpg') no-repeat;
+  background-size:cover;
+  background-repeat: no-repeat;
+} */
+
+
+
+
+
+
+
+#section03 {
+    width: 100%;
+    height: 1080px;
+    background: url('../img/long_line.png');
+    background-color:#242424;
+    position: relative;
+    color: #fff;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width :767px){
+    .menu_box{
+      padding-top: 7%;
+    }
+
+    .container-main{
+        padding-top: 40px;
+        
+    }
+    .main-img{
+        display: none;
+    }
+
+    .intro{
+        padding-top: 200px;
+        padding-left: 87px;
+        margin-right: 5px;
+    }
+    .intro p{
+        font-size: 20px!important;
+        text-align: center;
+    }
+   .container-main{
+     padding: 150px 0;
+   }
+
+
+    .display-none{
+        display: none;
+    }
+    .small-info{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .navi{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .width-40{
+        width: 100%;
+    }
+    .width-60{
+        width: 100%;
+    }
+    .info-big{
+        padding: 0;
+    }
+    .flex-box{
+        display: flex;
+        flex-direction: column-reverse;
+}
+
+/* @media (min-width: 576px){
+    .container {
+    max-width: 540px;
+    margin:0 auto;
+    }
+
+} */
+
+/* @media (min-width: 768px){
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    }
+} */
+
+/* @media (min-width: 992px){
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    }
+}
+
+@media (min-width: 1200px){
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    }
+} 
+
+@media(max-width:767px){
+    .d-none{
+        display: none;
+    }
+    .display-none{
+        display: none;
+    }
+    .small-info{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .navi{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .width-40{
+        width: 100%;
+    }
+    .width-60{
+        width: 100%;
+    }
+    .info-big{
+        padding: 0;
+    }
+    .flex-box{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+
+@media(max-width:767px){
+    .d-none{
+        display: none;
+    }
+    .display-none{
+        display: none;
+    }
+    .small-info{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .navi{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .width-40{
+        width: 100%;
+    }
+    .width-60{
+        width: 100%;
+    }
+    .info-big{
+        padding: 0;
+    }
+    .flex-box{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+} */
+
+
