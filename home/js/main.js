@@ -1,185 +1,61 @@
 jQuery(document).ready(function($){
-	//cache DOM elements
-	var projectsContainer = $('.cd-projects-container'),
-		projectsPreviewWrapper = projectsContainer.find('.cd-projects-previews'),
-		projectPreviews = projectsPreviewWrapper.children('li'),
-		projects = projectsContainer.find('.cd-projects'),
-		navigationTrigger = $('.cd-nav-trigger'),
-		navigation = $('.cd-primary-nav'),
-		//if browser doesn't support CSS transitions...
-		transitionsNotSupported = ( $('.no-csstransitions').length > 0);
+	var sliderContainers = $('.cd-slider-wrapper');
 
-	var animating = false,
-		//will be used to extract random numbers for projects slide up/slide down effect
-		numRandoms = projects.find('li').length, 
-		uniqueRandoms = [];
+	if( sliderContainers.length > 0 ) initBlockSlider(sliderContainers);
 
-	//open project
-	projectsPreviewWrapper.on('click', 'a', function(event){
-		event.preventDefault();
-		if( animating == false ) {
-			animating = true;
-			navigationTrigger.add(projectsContainer).addClass('project-open');
-			openProject($(this).parent('li'));
-		}
-	});
+	function initBlockSlider(sliderContainers) {
+		sliderContainers.each(function(){
+			var sliderContainer = $(this),
+				slides = sliderContainer.children('.cd-slider').children('li'),
+				sliderPagination = createSliderPagination(sliderContainer);
 
-	navigationTrigger.on('click', function(event){
-		event.preventDefault();
-		
-		if( animating == false ) {
-			animating = true;
-			if( navigationTrigger.hasClass('project-open') ) {
-				//close visible project
-				navigationTrigger.add(projectsContainer).removeClass('project-open');
-				closeProject();
-			} else if( navigationTrigger.hasClass('nav-visible') ) {
-				//close main navigation
-				navigationTrigger.removeClass('nav-visible');
-				navigation.removeClass('nav-clickable nav-visible');
-				if(transitionsNotSupported) projectPreviews.removeClass('slide-out');
-				else slideToggleProjects(projectsPreviewWrapper.children('li'), -1, 0, false);
-			} else {
-				//open main navigation
-				navigationTrigger.addClass('nav-visible');
-				navigation.addClass('nav-visible');
-				if(transitionsNotSupported) projectPreviews.addClass('slide-out');
-				else slideToggleProjects(projectsPreviewWrapper.children('li'), -1, 0, true);
-			}
-		}	
-
-		if(transitionsNotSupported) animating = false;
-	});
-
-	//scroll down to project info
-	projectsContainer.on('click', '.scroll', function(){
-		projectsContainer.animate({'scrollTop':$(window).height()}, 500); 
-	});
-
-	//check if background-images have been loaded and show project previews
-	projectPreviews.children('a').bgLoaded({
-	  	afterLoaded : function(){
-	   		showPreview(projectPreviews.eq(0));
-	  	}
-	});
-
-	function showPreview(projectPreview) {
-		if(projectPreview.length > 0 ) {
-			setTimeout(function(){
-				projectPreview.addClass('bg-loaded');
-				showPreview(projectPreview.next());
-			}, 150);
-		}
-	}
-
-	function openProject(projectPreview) {
-		var projectIndex = projectPreview.index();
-		projects.children('li').eq(projectIndex).add(projectPreview).addClass('selected');
-		
-		if( transitionsNotSupported ) {
-			projectPreviews.addClass('slide-out').removeClass('selected');
-			projects.children('li').eq(projectIndex).addClass('content-visible');
-			animating = false;
-		} else { 
-			slideToggleProjects(projectPreviews, projectIndex, 0, true);
-		}
-	}
-
-	function closeProject() {
-		projects.find('.selected').removeClass('selected').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-			$(this).removeClass('content-visible').off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
-			slideToggleProjects(projectsPreviewWrapper.children('li'), -1, 0, false);
-		});
-
-		//if browser doesn't support CSS transitions...
-		if( transitionsNotSupported ) {
-			projectPreviews.removeClass('slide-out');
-			projects.find('.content-visible').removeClass('content-visible');
-			animating = false;
-		}
-	}
-
-	function slideToggleProjects(projectsPreviewWrapper, projectIndex, index, bool) {
-		if(index == 0 ) createArrayRandom();
-		if( projectIndex != -1 && index == 0 ) index = 1;
-
-		var randomProjectIndex = makeUniqueRandom();
-		if( randomProjectIndex == projectIndex ) randomProjectIndex = makeUniqueRandom();
-		
-		if( index < numRandoms - 1 ) {
-			projectsPreviewWrapper.eq(randomProjectIndex).toggleClass('slide-out', bool);
-			setTimeout( function(){
-				//animate next preview project
-				slideToggleProjects(projectsPreviewWrapper, projectIndex, index + 1, bool);
-			}, 150);
-		} else if ( index == numRandoms - 1 ) {
-			//this is the last project preview to be animated 
-			projectsPreviewWrapper.eq(randomProjectIndex).toggleClass('slide-out', bool).one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-				if( projectIndex != -1) {
-					projects.children('li.selected').addClass('content-visible');
-					projectsPreviewWrapper.eq(projectIndex).addClass('slide-out').removeClass('selected');
-				} else if( navigation.hasClass('nav-visible') && bool ) {
-					navigation.addClass('nav-clickable');
-				}
-				projectsPreviewWrapper.eq(randomProjectIndex).off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
-				animating = false;
+			sliderPagination.on('click', function(event){
+				event.preventDefault();
+				var selected = $(this),
+					index = selected.index();
+				updateSlider(index, sliderPagination, slides);
 			});
-		}
+
+			sliderContainer.on('swipeleft', function(){
+				var bool = enableSwipe(sliderContainer),
+					visibleSlide = sliderContainer.find('.is-visible').last(),
+					visibleSlideIndex = visibleSlide.index();
+				if(!visibleSlide.is(':last-child') && bool) {updateSlider(visibleSlideIndex + 1, sliderPagination, slides);}
+			});
+
+			sliderContainer.on('swiperight', function(){
+				var bool = enableSwipe(sliderContainer),
+					visibleSlide = sliderContainer.find('.is-visible').last(),
+					visibleSlideIndex = visibleSlide.index();
+				if(!visibleSlide.is(':first-child') && bool) {updateSlider(visibleSlideIndex - 1, sliderPagination, slides);}
+			});
+		});
 	}
 
-	//http://stackoverflow.com/questions/19351759/javascript-random-number-out-of-5-no-repeat-until-all-have-been-used
-	function makeUniqueRandom() {
-	    var index = Math.floor(Math.random() * uniqueRandoms.length);
-	    var val = uniqueRandoms[index];
-	    // now remove that value from the array
-	    uniqueRandoms.splice(index, 1);
-	    return val;
+	function createSliderPagination(container){
+		var wrapper = $('<ol class="cd-slider-navigation"></ol>');
+		container.children('.cd-slider').find('li').each(function(index){
+			var dotWrapper = (index == 0) ? $('<li class="selected"></li>') : $('<li></li>'),
+				dot = $('<a href="#0"></a>').appendTo(dotWrapper);
+			dotWrapper.appendTo(wrapper);
+			var dotText = ( index+1 < 10 ) ? '0'+ (index+1) : index+1;
+			dot.text(dotText);
+		});
+		wrapper.appendTo(container);
+		return wrapper.children('li');
 	}
 
-	function createArrayRandom() {
-		//reset array
-		uniqueRandoms.length = 0;
-		for (var i = 0; i < numRandoms; i++) {
-            uniqueRandoms.push(i);
-        }
+	function updateSlider(n, navigation, slides) {
+		navigation.removeClass('selected').eq(n).addClass('selected');
+		slides.eq(n).addClass('is-visible').removeClass('covered').prevAll('li').addClass('is-visible covered').end().nextAll('li').removeClass('is-visible covered');
+
+		//fixes a bug on Firefox with ul.cd-slider-navigation z-index
+		navigation.parent('ul').addClass('slider-animating').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+			$(this).removeClass('slider-animating');
+		});
+	}
+
+	function enableSwipe(container) {
+		return ( container.parents('.touch').length > 0 );
 	}
 });
-
- /*
- * BG Loaded
- * Copyright (c) 2014 Jonathan Catmull
- * Licensed under the MIT license.
- */
- (function($){
- 	$.fn.bgLoaded = function(custom) {
-	 	var self = this;
-
-		// Default plugin settings
-		var defaults = {
-			afterLoaded : function(){
-				this.addClass('bg-loaded');
-			}
-		};
-
-		// Merge default and user settings
-		var settings = $.extend({}, defaults, custom);
-
-		// Loop through element
-		self.each(function(){
-			var $this = $(this),
-				bgImgs = $this.css('background-image').split(', ');
-			$this.data('loaded-count',0);
-			$.each( bgImgs, function(key, value){
-				var img = value.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
-				$('<img/>').attr('src', img).load(function() {
-					$(this).remove(); // prevent memory leaks
-					$this.data('loaded-count',$this.data('loaded-count')+1);
-					if ($this.data('loaded-count') >= bgImgs.length) {
-						settings.afterLoaded.call($this);
-					}
-				});
-			});
-
-		});
-	};
-})(jQuery);

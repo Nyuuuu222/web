@@ -8,30 +8,67 @@
 	<meta property="og:description" content="디스크립션" />
 	<meta property="og:title" content="타이틀" />
 	<title>Untitled Document</title>
+	
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+	<!-- <script src="js/jquery-2.1.4.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/normal.css">
 	<link rel="stylesheet" href="css/fontawesome.css">
-	<link rel="stylesheet" href="css/aos.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="css/aos.css"> -->
+	<!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 	
 	<link rel="stylesheet" href="css/assets/animate.css">
 	<link rel="stylesheet" href="css/assets/style.css">
 	<link rel="stylesheet" href="css/full-page-scroll.css">
-	<link rel="stylesheet" href="css/slidedemo.css">
-	<link rel="stylesheet" href="css/component.css">
+	<link rel="stylesheet" href="css/slider_1.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="js/jquery.onepage-scroll.js"></script>
 
-
-
-
+	<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+	<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+	<script src="js/modernizr.custom.79639.js"></script>
+  	
 
 
 
 	<style type="text/css">
 
 *{list-style:none; margin:0; padding:0;}
+/* 이거 색바뀌는건데 음.... 적용하기가 좀 애매함 */
+/* .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      display: block;
+      padding: 7px;
+      width: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      background: rgba(255, 255, 255, 0.25);
+      font-weight: bold;
+      font-size: 13px;
+      color: #000;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
+    }
+    .back:hover {
+      color: black;
+      background: rgba(255, 255, 255, 0.5);
+    }
+    .viewing-page-2 .back{
+      background: rgba(0, 0, 0, 0.25);
+      color: #FFF;
+      } */
+
 	</style>	
 
 
@@ -47,23 +84,27 @@
 
 
 <body>
+
+
+
 <div id="main" class="scroll-container">
 
 
 	<section class="section1">
 
+		<!-- <a href="https://github.com/alvarotrigo/fullPage.js" id="githubLink"><img style="position: fixed;z-index:99; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a> -->
 
 		<div id="section01">
-			<div class="menu_box">
+
+			<a href="#" class="back"><div class="menu_box">
 				<div class="logo"><span class="image blinking"><a href="#section01"><img src="img/logo.png"
 								alt=""></a></span></div>
 				<ul>
 					<li class="ghost" id="btn-nav">
 						<a href="#section01"><img src="img/ghosticon.png" alt=""></a>
 				</ul>
-
-			</div>
-
+		
+			</div></a>
 			<!-- menu 끝 -->
 
 			<div class="container-main">
@@ -110,28 +151,90 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+	
+
 	<section class="section2">
 
 
-		<div class="container-slide">
-			<div class="row">
 
 
-				<div class="slider-main bg1">
-				</div>
+		<div id="section02">
+			
+		<div class="cd-slider-wrapper">
+			<ul class="cd-slider">
+				<li class="is-visible">
+					<div class="cd-half-block image"></div>
+						
+					<div class="cd-half-block content-1">
+						
+						<div>
+								<h2>책과 영화의 도시</h2>
+							<p>
+								출판도시는 경기도 파주시 문발동 일대에 조성된 국가문화산업단지입니다.
+<br>
+1980년대 말 출판문화 환경을 개선하여 21세기에 출판문화산업을 국가전략산업으로 육성시키고자 염원했던 출판문화인들의 꿈이 현실로 이루어진 출판문화공동체이며 글에서 태어난 책이, 영화라는 이름으로 꽃 피운 이 도시는 대한민국의 문화산업을 이끌어 갈 것입니다.
+							</p>
+							<!-- <a href="https://codyhouse.co/?p=7404" class="btn">Article &amp; Download</a> -->
+						</div>
+					</div>
+				</li> <!-- .cd-half-block.content -->
+	
+				<li>
+					<div class="cd-half-block image"></div>
+	
+					<div class="cd-half-block content-1 light-bg">
+						<div>
+							<h2>건축의 도시</h2>
+							<p>
+								1단계 ‘위대한 계약’과 2단계 ‘선한 계약’을 바탕으로 조성된 출판도시는 책과 건축의 협업으로 이루어낸 도시입니다.
+<br>
+다양하고 아름다운 건축물로 이루어진 출판도시는 도시 외형뿐 아니라 건설 과정도 아름다울 수 있도록 건축가와 설계자들이 노력한 결과이기도 합니다. 주변의 환경을 최대한 살리고 기존 경관을 부각시킬 수 있는 건축물을 짓기 위해 노력하였기에 각각의 건물들이 조화를 이루어 도시 전체가 빛날 수 있었습니다.
+						</div>
+					</div> <!-- .cd-half-block.content -->
+				</li>
+	
+				<li>
+					<div class="cd-half-block image"></div>
+	
+					<div class="cd-half-block content-1">
+						<div>
+							<h2>교육의 도시</h2>
+							<p>
+								출판도시는 도시 전체가 캠퍼스로 활용될 수 있는 교육의 공간입니다.
+<br>
+박물관, 미술관, 체험학교 등이 개성 있는 프로그램을 상시 운영 중이며 PaTI, 명필름 영화학교 등 분야별로 특수화된 교육을 받을 수 있는 체계를 갖추어 인재양성에도 노력하고 있습니다.
+							</p>
+						</div>
+					</div> <!-- .cd-half-block.content -->
+				</li>
+	
+				<li>
+					<div class="cd-half-block image"></div>
+	
+					<div class="cd-half-block content-1">
+						<div>
+							<h2 class="slider4-txt">인간성 회복을 위한 도시</h2>
+							<p>
+								북시티는 약속의 땅 파주에서도 자유로변에 세워진 출판문화공동체입니다. <br>당초에 이 북시티 프로젝트는 책을 만드는 뜻있는 출판인들이, 책과 관련된 공간 즉 책을 기획하고 생산-유통하는 산업도시로서 북시티를 설정하고 기획했습니다. 북시티, 다시 말해 출판도시를 추진해 오면서 가장 많이 받는 질문 가운데 하나는 왜 이 도시를 기획했으며 어떤 목표로 도시를 만드느냐는 것이었습니다. 답변은 간단하고도 명료했습니다. 
+								<br><br>
+								"인간성의 회복을 위해서 이 도시를 만든다. 그러므로 이 도시는 인간을 위한 공간이어야 한다."
+							</p>
+						</div>
+					</div> <!-- .cd-half-block.content -->
+				</li>
+			</ul> <!-- .cd-slider -->
+		</div> <!-- .cd-slider-wrapper -->
 
-				<div class="slider-main bg2">
-				</div>
-
-				<div class="slider-main bg3">
-				</div>
-
-
-			</div>
-		</div>
-
-		
-	</section>
 
 
 
@@ -139,20 +242,11 @@
 
 
 
+	</div>
 
 
-	<div class="container">
-		<!-- Top Navigation -->
 
-		<div id="boxgallery" class="boxgallery" data-effect="effect-1">
-			<div class="panel"><img src="img/img01.png" alt="Image 1"/></div>
-			<div class="panel"><img src="img/img02.png" alt="Image 2"/></div>
-			<div class="panel"><img src="img/img03.png" alt="Image 3"/></div>
-			<div class="panel"><img src="img/img04.jpg" alt="Image 4"/></div>
-		</div>
- 
 
-	</div><!-- /container -->
 
 
 
@@ -162,10 +256,130 @@
 
 
 		<section class="section3">
-			<div>
-				<span>Page #3</span>				
+			<div id="section03">
+<!-- 시작 -->
+
+<div id="container" class="container">	
+
+	<div class="menu-panel">
+		<!-- <h3>Menu</h3> -->
+		<ul id="menu-toc" class="menu-toc">
+			<li class="menu-toc-current"><a href="#item1">지혜의 숲</a></li>
+			<li><a href="#item2">활자의 숲</a></li>
+			<li><a href="#item3">아트뮤지엄</a></li>
+			<li><a href="#item4">주변볼거리</a></li>
+			<li><a href="#item5">오시는길</a></li>
+		</ul>
+		<div>
+			<!-- <a href="http://tympanus.net/Development/AudioPlayer/">&larr; Previous Demo: Responsive Audio Player</a>
+			<a href="http://tympanus.net/codrops/?p=12795">Back to the Codrops Article</a> -->
+		</div>
+	</div>
+
+	<div class="bb-custom-wrapper">
+		<div id="bb-bookblock" class="bb-bookblock">
+			<div class="bb-item" id="item1">
+				<div class="content">
+					<div class="scroller">
+					<h2>지혜의숲</h2>
+					<div class="box___1">
+						<div class="forestOfwisdom fore-1">
+							<img src="img/img02.png" alt="" />
+							<div class="after_1">						<p>아시아출판문화정보센터 1층에 위치하고 있는 지혜의 숲은
+								가치 있는 책을 한데 모아 보존 보호하고 관리하며 함께 보는 공동의 서재입니다.
+								지혜의숲은 출판도시문화재단이 2014년도에 문화체육관광부의 후원을 받아 조성한 이래 재단의 자체 재원으로 운영하고 있는 복합문화공간입니다.
+								출판도시문화재단은 출판단지조합이 출자하고 문화체육관광부가 설립을 허가한 비영리 재단법인입니다.</p></div> 
+						</div>
+
+
+
+
+
+
+
+						<!-- <div class="txt_1">
+						<p>아시아출판문화정보센터 1층에 위치하고 있는 지혜의 숲은
+							가치 있는 책을 한데 모아 보존 보호하고 관리하며 함께 보는 공동의 서재입니다.
+							지혜의숲은 출판도시문화재단이 2014년도에 문화체육관광부의 후원을 받아 조성한 이래 재단의 자체 재원으로 운영하고 있는 복합문화공간입니다.
+							출판도시문화재단은 출판단지조합이 출자하고 문화체육관광부가 설립을 허가한 비영리 재단법인입니다.</p>
+						</div> -->
+					</div>
+
+
+
+					</div>
+				</div>
+			</div>
+			<div class="bb-item" id="item2">
+				<div class="content">
+					<div class="scroller">
+						<h2>활자의숲</h2>
+						<p>Butachinery; friction, not the real wear."</p>
+
+
+						<p><em>From <a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
+					</div>
+				</div>
+			</div>
+			<div class="bb-item" id="item3">
+				<div class="content">
+					<div class="scroller">
+						<h2>The honeymoon</h2>
+						<p>The origin of the honeymoon is not generally known.</p>
+
+
+					</div>
+				</div>
+			</div>
+			<div class="bb-item" id="item4">
+				<div class="content">
+					<div class="scroller">
+						<h2>A drawing joke</h2>
+						<p>Seulty.</p>
+
+						
+					</div>
+				</div>
+			</div>
+			<div class="bb-item" id="item5">
+				<div class="content">
+					<div class="scroller">
+						<h2>Commencing practice</h2>
+						<p>From sculapian:"--</p>
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<nav class="section3_nav">
+			<span id="bb-nav-prev">&larr;</span>
+			<span id="bb-nav-next">&rarr;</span>
+		</nav>
+
+		<span id="tblcontents" class="menu-button">Table of Contents</span>
+
+	</div>
+		
+</div>/container
+
+
+
+<!-- 끝 -->
 			</div>
 		</section>
+
+
+
+
+
+
+
+
+
+
+
 
 
 		<section class="section4">
@@ -186,7 +400,28 @@
 
 
 
+<!-- 오른쪽 상단 고정메뉴 -->
+    <!-- <a href="https://github.com/peachananr/onepage-scroll"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a> -->
 
+
+
+
+
+
+
+	<!-- 책장 -->
+	
+
+
+
+
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+	  
+		gtag('config', 'UA-11278966-3');
+	  </script>
 
 
 
@@ -204,12 +439,128 @@
 
 
 
+<!-- 연습 -->
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/jquery.jscrollpane.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script src="js/page.js"></script>
+		<script>
+			$(function() {
+
+				Page.init();
+
+			});
+		</script>
 
 
 
+
+
+
+<script>
+	$(document).ready(function() {
+	
+	  var curPage = 1;
+	  var numOfPages = $(".skw-page").length;
+	  var animTime = 1000;
+	  var scrolling = false;
+	  var pgPrefix = ".skw-page-";
+	
+	  function pagination() {
+		scrolling = true;
+	
+		$(pgPrefix + curPage).removeClass("inactive").addClass("active");
+		$(pgPrefix + (curPage - 1)).addClass("inactive");
+		$(pgPrefix + (curPage + 1)).removeClass("active");
+	
+		setTimeout(function() {
+		  scrolling = false;
+		}, animTime);
+	  };
+	
+	  function navigateUp() {
+		if (curPage === 1) return;
+		curPage--;
+		pagination();
+	  };
+	
+	  function navigateDown() {
+		if (curPage === numOfPages) return;
+		curPage++;
+		pagination();
+	  };
+	
+	  $(document).on("mousewheel DOMMouseScroll", function(e) {
+		if (scrolling) return;
+		if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
+		  navigateUp();
+		} else { 
+		  navigateDown();
+		}
+	  });
+	
+	  $(document).on("keydown", function(e) {
+		if (scrolling) return;
+		if (e.which === 38) {
+		  navigateUp();
+		} else if (e.which === 40) {
+		  navigateDown();
+		}
+	  });
+	
+	});
+	</script>
+	<!-- <script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-36251023-1']);
+	  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script> -->
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 끝 -->
+
+
   
-  
-  
+  <!-- 음.....메뉴 고정해봤는데 안됌 -->
+<!-- <script>
+	$( document ).ready( function() {
+	  var mnOffset = $( '.menu_box' ).offset();
+	  $( window ).scroll( function() {
+		if ( $( document ).scrollTop() > mnOffset.top ) {
+		  $( '.menu_box' ).addClass( 'mnFixed' );
+		}
+		else {
+		  $( '.menu_box' ).removeClass( 'mnFixed' );
+		}
+	  });
+	} );
+  </script> -->
   
   <script>
 	
@@ -336,35 +687,34 @@
   </script>
 
 
-<script>	//   슬라이드 첫번째
-	new BoxesFx( document.getElementById( 'boxgallery' ) );</script>
 
-  <script src="js/swiper.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/assets/jquery.fittext.js"></script>
-  <script src="js/assets/jquery.lettering.js"></script>
-  <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
-  <script src="js/assets/jquery.textillate.js"></script>
-  <script src="js/boxSlider.js"></script>
+
+  <!-- <script src="js/swiper.min.js"></script> -->
+  <!-- <script src="js/wow.min.js"></script> -->
+  <!-- <script src="js/aos.js"></script> -->
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <!-- <script src="js/assets/jquery.fittext.js"></script> -->
+  <!-- <script src="js/assets/jquery.lettering.js"></script> -->
+  <!-- <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script> -->
+  <!-- <script src="js/assets/jquery.textillate.js"></script> -->
+  <!-- <script src="js/boxSlider.js"></script> -->
   <script src="css/assets/jquery.fittext.js"></script>
   <script src="css/assets/jquery.lettering.js"></script>
   <script src="js/jquery.textillate.js"></script>
-  <script src="//yandex.st/highlightjs/7.3/highlight.min.js"></script>
-  <script src="js/modernizr.js"></script>
-  <script src="js/boxesFx.js"></script>
-  <script src="js/classie.js"></script>
-  <script src="js/modernizr.custom.js"></script>
+  <!-- <script src="//yandex.st/highlightjs/7.3/highlight.min.js"></script> -->
+  <!-- <script src="js/jquery-2.1.4.js"></script> -->
+
+  <script src="js/jquery.mobile.custom.min.js"></script>
+  <script src="js/main.js"></script> <!-- Resource jQuery -->
+
 
  
-  
 
-  
   
   <script src="js/js.js"></script>
 
-
-  
 </body>
 </html>
+
+
+
