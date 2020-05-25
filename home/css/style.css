@@ -1,4 +1,4 @@
-
+@font-face { font-family: 'GyeonggiBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 /* .section3_nav{
   margin: 0 auto;
@@ -176,7 +176,7 @@
     padding-top: 8%;
 		padding-left: 16.6%;
 		display: block;
-        font-family: 'Book Antiqua';
+    font-family: 'Book Antiqua';
 
 		
 	}
@@ -204,7 +204,7 @@
     .intro p{
         
         color: #FFF;
-        font-family: 'Noto Sans CJK KR','Regular';
+        font-family: 'GyeonggiBatang','Regular'!important;
         text-align: right;
         right: 16.6%;
         margin-top: -6%;
@@ -233,7 +233,7 @@
       .logo a {
           font-size: 46px;
           color: #FFF;
-          font-family: 'Noto Sans CJK KR','Regular';
+          font-family: 'GyeonggiBatang','Regular';
           text-decoration: none;
       }
   
@@ -414,7 +414,7 @@
     background: url('../img/long-line.png');
     background-color:#242424;
     position: relative;
-    font-family: 'Noto Sans CJK KR','Regular';
+    font-family: 'GyeonggiBatang','Regular';
     
     
     
@@ -466,13 +466,19 @@
     .main-img{
         display: none;
     }
-  .tlt{
+    .tlt{
     transform: translate(-3%,20%);
-  }
-
-.dots-left {
-	right: 4%!important;
-}
+    
+    }
+    .texts li{
+      font-size: 14px!important;
+    }
+    .dots{
+      top: 43%!important;
+    }
+    .dots-left {
+    right: 5%!important;
+    }
 
 
     .intro{
@@ -480,9 +486,15 @@
         padding-left: 87px;
         margin-right: 5px;
     }
+    .playground .viewport .tlt{
+      font-size: 60px!important;
+      letter-spacing: 3px!important;
+
+    }
     .intro p{
         font-size: 20px!important;
         text-align: center;
+
     }
    .container-main{
      padding: 150px 0;

@@ -101,7 +101,7 @@
 }
 .cd-slider h2 {
   color: #f46c6a;
-  font-size: 5rem;
+  font-size: 3rem!important;
   margin-bottom: .4em;
 }
 .cd-slider .slider4-txt{
@@ -191,7 +191,7 @@
     font-size: 1.4rem;
   }
   .cd-slider p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .cd-slider h2 {
     font-size: 3.5rem;
