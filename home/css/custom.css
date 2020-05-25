@@ -13,7 +13,7 @@ html { height: 100%; }
 }
 
 body {
-	font-family: 'Lato', Calibri, Arial, sans-serif;
+	/* font-family: 'Lato', Calibri, Arial, sans-serif; */
 	background: #fff;
 	font-weight: 400;
 	font-size: 100%;
@@ -59,7 +59,7 @@ a:hover {
 }
 
 .menu-panel {
-	background: #f1103a;
+	background: #77AF9C;
 	width: 240px;
 	height: 100%;
 	position: fixed;
@@ -93,13 +93,13 @@ a:hover {
 	line-height: 3.5;
 	padding: 0 20px;
 	cursor: pointer;
-	background: #f1103a;
-	border-bottom: 1px solid #dd1338;
+	background:#77AF9C;
+	border-bottom: 1px solid  rgb(106, 146, 133);
 }
 
 .menu-toc li a:hover,
 .menu-toc li.menu-toc-current a{
-	background: #dd1338;
+	background:  rgb(106, 146, 133);
 }
 
 .menu-panel div {
@@ -113,7 +113,7 @@ a:hover {
 	padding: 5px 20px;
 	display: block;
 	border: none;
-	color: #bc0b0b;
+	color:  rgb(86, 153, 132);
 	letter-spacing: 1px;
 	font-weight: 800;
 	text-shadow: 0 1px rgba(255,255,255,0.2);
@@ -147,7 +147,7 @@ a:hover {
 	height: 32px;
 	top: 0;
 	left: 0;
-	background: #f1103a;
+	background: #77AF9C;
 	border-radius: 50%;
 	color: #fff;
 	line-height: 30px;
@@ -218,30 +218,30 @@ a:hover {
 	height: 20px;
 	z-index: 100;
 	pointer-events: none;
-	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	/* background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); */
 }
 
 .js .content:after {
 	top: auto;
 	bottom: 0;
-	background: -webkit-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	/* background: -webkit-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 	background: -moz-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 	background: -o-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-	background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); */
 }
 
 .content h2 {
 	font-weight: 300;
 	font-size: 4em;
 	padding: 0 0 10px;
-	color: #333;
+	color: #fff;
 	margin: 0 1% 40px;
 	text-align: left;
 	box-shadow: 0 10px 0 rgba(0,0,0,0.02);
-	text-shadow: 0 0 2px #fff;
+	/* text-shadow: 0 0 2px #fff; */
 }
 
 .no-js .content h2 {

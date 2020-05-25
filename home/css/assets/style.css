@@ -4,6 +4,7 @@
   .playground .controls select {
     width: 100%;
     margin-right: 0;
+
   }
 }
 
@@ -13,7 +14,7 @@
   color: #FFF;
   font-size: 4rem;
   font-family: 'Book Antiqua','bold';
-  padding-left: 16.8%;
+  padding-left: 15.6%;
   padding-top: 10%;
   position: absolute;
 
