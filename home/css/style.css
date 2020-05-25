@@ -467,8 +467,8 @@
         display: none;
     }
     .tlt{
-    transform: translate(-3%,20%);
-    
+    /* transform: translate(-3%,20%); */
+    margin: 0 auto!important;
     }
     .texts li{
       font-size: 14px!important;
