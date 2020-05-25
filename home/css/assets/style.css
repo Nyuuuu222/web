@@ -17,7 +17,7 @@
   padding-left: 15.6%;
   padding-top: 10%;
   position: absolute;
-
+  
   letter-spacing: 1px;
   /* display: inline-block;
   vertical-align: middle;
@@ -31,11 +31,11 @@
 /* GRID 
 ***************/ 
 
-.grid:after {
+/* .grid:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 [class*='col-'] {
   display: flex;
@@ -89,6 +89,7 @@
 @media (max-width: 767px) {
   [class*='col-'] {
     width: 100%;
+
   }
 }
 

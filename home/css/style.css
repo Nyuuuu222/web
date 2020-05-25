@@ -466,6 +466,14 @@
     .main-img{
         display: none;
     }
+  .tlt{
+    transform: translate(-3%,20%);
+  }
+
+.dots-left {
+	right: 4%!important;
+}
+
 
     .intro{
         padding-top: 200px;
@@ -478,8 +486,8 @@
     }
    .container-main{
      padding: 150px 0;
+     margin: 0 auto;
    }
-
 
     .display-none{
         display: none;
