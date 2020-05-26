@@ -46,7 +46,7 @@
   transform: translateX(0);
 }
 .cd-slider .cd-half-block {
-  height: 50%;
+  /* height: 50%; */
   background-position: center center;
   background-repeat: no-repeat;
 }

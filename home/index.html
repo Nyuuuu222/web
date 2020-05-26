@@ -14,6 +14,12 @@
 	<!-- <script src="js/jquery-2.1.4.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+
+
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/normal.css">
@@ -200,6 +206,7 @@
 								출판도시는 경기도 파주시 문발동 일대에 조성된 국가문화산업단지입니다.
 <br>
 1980년대 말 출판문화 환경을 개선하여 21세기에 출판문화산업을 국가전략산업으로 육성시키고자 염원했던 출판문화인들의 꿈이 현실로 이루어진 출판문화공동체이며 글에서 태어난 책이, 영화라는 이름으로 꽃 피운 이 도시는 대한민국의 문화산업을 이끌어 갈 것입니다.
+<br><br><br><br><br><br>
 							</p>
 							<!-- <a href="https://codyhouse.co/?p=7404" class="btn">Article &amp; Download</a> -->
 						</div>
@@ -422,7 +429,18 @@
 
 
 
-
+<script>
+	 $(document).ready(function(){
+   var max_h=0;
+   $(".cd-slider li").each(function(){
+ var h = parseInt($(this).css("height"));
+    if(max_h<h){ max_h = h; }
+   });
+   $(".cd-slider li").each(function(){
+ $(this).css({height:max_h});
+   });
+  });
+</script>
 
 
 
@@ -477,7 +495,7 @@
 
 
 
-
+<!-- 
 <script>
 	$(document).ready(function() {
 	
@@ -530,7 +548,7 @@
 	  });
 	
 	});
-	</script>
+	</script> -->
 	<!-- <script type="text/javascript">
 	
 	  var _gaq = _gaq || [];
@@ -580,13 +598,8 @@
   </script> -->
   
   <script>
-	
-  
-  
-  
-  
-  
-  
+	  
+    
 	// ㅁㅔ인 텍스트 효과
   
   
