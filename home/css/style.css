@@ -495,10 +495,12 @@
       letter-spacing: 3px!important;
 
     }
+    
     .intro p{
       padding-top: 200px!important;
       padding-left: 130px!important;
         font-size: 20px!important;
+        letter-spacing: -1px!important;
         text-align: center;
         /* display: flex;
         justify-content: center; */
