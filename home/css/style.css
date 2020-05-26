@@ -508,8 +508,9 @@
     }
 
     .content-1 div{
-      margin-bottom: 234.81px;
-    
+      /* 이게 원래 노트9 사이즈 */
+      /* margin-bottom: 234.81px; */
+    margin-bottom: 180px;
     }
 
 
