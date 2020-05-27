@@ -1,4 +1,4 @@
-
+@import url(//fonts.googleapis.com/css?family=Lato:300,400,700);
 
 html { height: 100%; }
 
@@ -13,11 +13,11 @@ html { height: 100%; }
 }
 
 body {
-	font-family: 'GyeonggiBatang';
+	font-family: 'Lato', Calibri, Arial, sans-serif;
 	background: #fff;
 	font-weight: 400;
-	font-size: 100%
-	color: #333333;
+	font-size: 100%;
+	color: #333;
 	height: 100%;
 }
 
@@ -39,7 +39,7 @@ a:hover {
 .bb-custom-wrapper,
 .bb-bookblock {
 	width: 100%;
-	/* height: 100%; */
+	height: 100%;
 }
 
 .container {
@@ -59,7 +59,7 @@ a:hover {
 }
 
 .menu-panel {
-	background: #77AF9C;
+	background: #f1103a;
 	width: 240px;
 	height: 100%;
 	position: fixed;
@@ -93,13 +93,13 @@ a:hover {
 	line-height: 3.5;
 	padding: 0 20px;
 	cursor: pointer;
-	background:#77AF9C;
-	border-bottom: 1px solid  rgb(106, 146, 133);
+	background: #f1103a;
+	border-bottom: 1px solid #dd1338;
 }
 
 .menu-toc li a:hover,
 .menu-toc li.menu-toc-current a{
-	background:  rgb(106, 146, 133);
+	background: #dd1338;
 }
 
 .menu-panel div {
@@ -113,7 +113,7 @@ a:hover {
 	padding: 5px 20px;
 	display: block;
 	border: none;
-	color:  rgb(86, 153, 132);
+	color: #bc0b0b;
 	letter-spacing: 1px;
 	font-weight: 800;
 	text-shadow: 0 1px rgba(255,255,255,0.2);
@@ -125,20 +125,12 @@ a:hover {
 	text-shadow: none;
 }
 
-
 .bb-custom-wrapper nav {
-	top: 2%;
-	left: 70%;
-	position: absolute;
-	z-index: 1000;
-}
-
-/* .bb-custom-wrapper nav {
 	top: 20px;
 	left: 60px;
 	position: absolute;
 	z-index: 1000;
-} */
+}
 
 .bb-custom-wrapper nav span,
 .menu-button {
@@ -147,12 +139,12 @@ a:hover {
 	height: 32px;
 	top: 0;
 	left: 0;
-	/* background: #77AF9C; */
+	background: #f1103a;
 	border-radius: 50%;
 	color: #fff;
 	line-height: 30px;
 	text-align: center;
-	/* speak: none; */
+	speak: none;
 	font-weight: bold;
 	cursor: pointer;
 }
@@ -162,18 +154,14 @@ a:hover {
 	background: #000;
 }
 
-/* .bb-custom-wrapper nav span:last-child {
-	left: 40px;
-} */
 .bb-custom-wrapper nav span:last-child {
-	left: 100px;
+	left: 40px;
 }
-
 
 .menu-button {
 	z-index: 1000;
-	left: 5%;
-	top: 2%;
+	left: 20px;
+	top: 20px;
 	text-indent: -9000px;
 }
 
@@ -218,30 +206,30 @@ a:hover {
 	height: 20px;
 	z-index: 100;
 	pointer-events: none;
-	/* background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 }
 
 .js .content:after {
 	top: auto;
 	bottom: 0;
-	/* background: -webkit-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 	background: -moz-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 	background: -o-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-	background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); */
+	background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 }
 
 .content h2 {
 	font-weight: 300;
 	font-size: 4em;
 	padding: 0 0 10px;
-	color: #fff;
+	color: #333;
 	margin: 0 1% 40px;
 	text-align: left;
 	box-shadow: 0 10px 0 rgba(0,0,0,0.02);
-	/* text-shadow: 0 0 2px #fff; */
+	text-shadow: 0 0 2px #fff;
 }
 
 .no-js .content h2 {
@@ -249,7 +237,7 @@ a:hover {
 }
 
 .content p {
-	font-size: 1.4em;
+	font-size: 1.2em;
 	line-height: 1.6;
 	font-weight: 300;
 	padding: 5px 8%;
