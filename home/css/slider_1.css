@@ -99,11 +99,31 @@
 .cd-slider li:nth-of-type(4) .content-1 {
   background-color: #f46c6a;
 }
+
+
+
+
 .cd-slider h2 {
   color: #f46c6a;
   font-size: 3rem!important;
   margin-bottom: .4em;
 }
+
+.cd-slider li:nth-of-type(2) h2 {
+  color: red;
+}
+.cd-slider li:nth-of-type(3) h2 {
+  color: blue;
+}
+.cd-slider li:nth-of-type(4) h2 {
+  color: palegreen;
+}
+
+
+
+
+
+
 .cd-slider .slider4-txt{
   color: #ffffff;
 
