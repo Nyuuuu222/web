@@ -1,14 +1,6 @@
 
 
 
-
-
-
-
-
-
-
-
 @font-face { font-family: 'GyeonggiBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 /* .section3_nav{
@@ -17,28 +9,6 @@
 /* .scroller h2{
   color: #FFF!important;
 } */
-.forestOfwisdom {
-  position: relative;
-  width: 100%;
-}
-.forestOfwisdom .after_1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  color: #FFF;
-  margin: 0 auto;
-  justify-content: center;
-  text-align: center;
-  padding-top: 200%;
-}
-.forestOfwisdom:hover .after_1 {
-  display: block;
-  width: 881px;
-  background: rgba(0, 0, 0, .6);
-}
 
 
 /* 슬라이더 */
@@ -233,6 +203,10 @@
       -webkit-transition: all 0.5s ease-in-out;
       z-index: 9999999;
   }
+    .logo{
+      position: fixed;
+      z-index: 99999999999;
+    }
   /* .mnFixed {
     position: fixed;
     top: 0px;
@@ -432,21 +406,67 @@
 
 }
   .forestOfwisdom{
-    width: 100px;
-
+    display: flex;
   }
   .box___1{
     display: flex;
     position: relative;
+    justify-content: space-around;
   }
+
+  /* .fore-2{
+    padding-left: 20%;
+  } */
   .txt_1{
     display: flex;
     justify-content: flex-end;
     padding-left: 44%;
   }
 
+  .box___2{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+  }
 
 
+  /* .content p {
+    font-size: 1.4em;
+    line-height: 1.6;
+    font-weight: 300;
+    padding: 5px 8%;
+    text-align: justify;
+  } */
+  .forestOfwisdom {
+    position: relative;
+    width: 100%;
+  }
+  .forestOfwisdom .after_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+    margin: 0 auto;
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* vertical-align: middle; */
+  }
+  .forestOfwisdom:hover .after_1 {
+    display: block;
+    padding: 27% 8%;
+    /* line-height: 10px; */
+    width: 881px;
+    background: rgba(0, 0, 0, .6);
+    
+  }
+
+
+  
+
+  
 
 
 
