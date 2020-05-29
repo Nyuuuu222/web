@@ -10,15 +10,9 @@
 	<title>Untitled Document</title>
 	
 	<script src="http://code.jquery.com/jquery.min.js"></script>
-	<!-- <script src="js/jquery-3.2.1.min.js"></script> -->
-	<!-- <script src="js/jquery-2.1.4.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<!-- <link rel="stylesheet" href="css/aos.css"> -->
-	<!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-	<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+
 
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -42,7 +36,7 @@
 	<script src="js/modernizr.custom.79639.js"></script>
 	<script src="js/page.js"></script>
 
-	<!-- <script src="js/jquery.mousewheel.js"></script> -->
+
   	
 
 
@@ -50,35 +44,7 @@
 	<style type="text/css">
 
 *{list-style:none; margin:0; padding:0;}
-/* 이거 색바뀌는건데 음.... 적용하기가 좀 애매함 */
-/* .back {
-      position: absolute;
-      top: 0;
-      left: 0;
-      text-align: center;
-      display: block;
-      padding: 7px;
-      width: 100%;
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      background: rgba(255, 255, 255, 0.25);
-      font-weight: bold;
-      font-size: 13px;
-      color: #000;
-      -webkit-transition: all 500ms ease-in-out;
-      -moz-transition: all 500ms ease-in-out;
-      -o-transition: all 500ms ease-in-out;
-      transition: all 500ms ease-in-out;
-    }
-    .back:hover {
-      color: black;
-      background: rgba(255, 255, 255, 0.5);
-    }
-    .viewing-page-2 .back{
-      background: rgba(0, 0, 0, 0.25);
-      color: #FFF;
-      } */
+
 
 	</style>	
 
@@ -95,7 +61,7 @@
 
 
 <body>
-	<div id="fakeLoader"></div>
+
 
 <div id="main" class="scroll-container">
 
@@ -309,20 +275,63 @@
 					<div class="bb-item" id="item2">
 						<div class="content">
 							<div class="scroller">
-							<h2>활자의숲</h2>
-							<div class="box___1">
-								<div class="forestOfwisdom fore-1">
-									<img src="img/letter.png" alt="" />
-									<div class="after_1">
-										<p>우리 활자공장에 있는 25톤,3천5백만자의 활자와 자모,주조기는 우리나라의 마지막 활자제조공장이자 판매점이었던 제일활자에서 옮겨온 것입니다. 2016년,공장시설과 활자를 파주출판도시로 옮기던 마지막 날까지도 하루에 두 세 개의 활자를 찾는 옛 거래처 인쇄인들을 위해 손수 공장의 문을 열었던 김태인선생과 그의 아들 김명식(57세)선생의 뜻을 이어 받은 제일활자공장은 오늘도 힘차게 돌아가고 있습니다.</p>
-									</div> 
-								</div>
-								<div class="forestOfwisdom fore-2">
-									<img src="img/letter-2.png" alt="" />
-									<div class="after_1">						<p>활판인쇄박물관에 있는 모든 인쇄장비들은 다 실제 가동하는 살아있는 기계들입니다. 출판도시활판인쇄박물관은 세계에서 가장 많은 활자를 보유하고 있습니다. 여기에 있는 활자를 만들려면 숙련된 주조공이 50년 동안 쉬지 않고 일해야 합니다. 이 활자와 장비들로 한지에 인쇄를 하고 우리의 전통제책 방식으로 책을 만들어 세계에 보급하고 있습니다. 한국의 명시들을 영어로 번역한 한영병기,바이링궐 한국시인선을 전통오침제본으로 만들어 아마존을 통해 세계에 공급하는 것이 그 시작입니다. </p></div> 
-								</div>
-								
-							</div>
+							
+
+
+<div class="container_slide3">
+  <div class="mySlides">
+    <img src="img/slide1.png">
+  </div>
+
+  <div class="mySlides">
+    <img src="img/slide6.png">
+  </div>
+
+  <div class="mySlides">
+    <img src="img/slide2.png">
+  </div>
+    
+  <div class="mySlides">
+    <img src="img/slide3.png">
+  </div>
+
+  <div class="mySlides">
+    <img src="img/slide4.png">
+  </div>
+    
+  <div class="mySlides">
+    <img src="img/slide5.png">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container_slide3">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/slide1.png" style="width:100%" onclick="currentSlide(1)" alt="우리나라를 대표하는 출판사들이 출판한 책들을 소장하고 있습니다.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/slide6.png" style="width:100%" onclick="currentSlide(2)" alt="출판사가 기증한 도서를 읽을 수 있는 공간입니다.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/slide2.png" style="width:100%" onclick="currentSlide(3)" alt="분야별 분류가 아닌 출판사별 분류를 통하여 우리나라 출판과 출판사의 역사를 살펴볼 수 있는 공간이기도 합니다.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/slide3.png" style="width:100%" onclick="currentSlide(4)" alt="출판사는 물론 유통사와 박물관, 미술관에서 기증한 도서를 볼 수 있습니다.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/slide4.png" style="width:100%" onclick="currentSlide(5)" alt="지혜의숲 3은 게스트하우스 지지향 로비입니다.">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img/slide5.png" style="width:100%" onclick="currentSlide(6)" alt="어린이책 코너가 별도로 마련되어 있습니다.">
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -332,8 +341,20 @@
 					<div class="bb-item" id="item3">
 						<div class="content">
 							<div class="scroller">
-								<h2>활</h2>
-								<p>자</p>
+								<h2>활자의숲</h2>
+								<div class="box___1">
+									<div class="forestOfwisdom fore-1">
+										<img src="img/letter.png" alt="" />
+										<div class="after_1">
+											<p>우리 활자공장에 있는 25톤,3천5백만자의 활자와 자모,주조기는 우리나라의 마지막 활자제조공장이자 판매점이었던 제일활자에서 옮겨온 것입니다. 2016년,공장시설과 활자를 파주출판도시로 옮기던 마지막 날까지도 하루에 두 세 개의 활자를 찾는 옛 거래처 인쇄인들을 위해 손수 공장의 문을 열었던 김태인선생과 그의 아들 김명식(57세)선생의 뜻을 이어 받은 제일활자공장은 오늘도 힘차게 돌아가고 있습니다.</p>
+										</div> 
+									</div>
+									<div class="forestOfwisdom fore-2">
+										<img src="img/letter-2.png" alt="" />
+										<div class="after_1">						<p>활판인쇄박물관에 있는 모든 인쇄장비들은 다 실제 가동하는 살아있는 기계들입니다. 출판도시활판인쇄박물관은 세계에서 가장 많은 활자를 보유하고 있습니다. 여기에 있는 활자를 만들려면 숙련된 주조공이 50년 동안 쉬지 않고 일해야 합니다. 이 활자와 장비들로 한지에 인쇄를 하고 우리의 전통제책 방식으로 책을 만들어 세계에 보급하고 있습니다. 한국의 명시들을 영어로 번역한 한영병기,바이링궐 한국시인선을 전통오침제본으로 만들어 아마존을 통해 세계에 공급하는 것이 그 시작입니다. </p></div> 
+									</div>
+									
+								</div>
 
 
 							</div>
@@ -392,7 +413,10 @@
 <!-- section4 시작 -->
 		<section class="section4">
 			<div id="section03">
-				<div id="map" style="width:100%;height:350px;"></div>
+				<div id="map-scroll-fixed" class="map-scroll-fixed">
+					<div id="map" style="width:100%;height:350px;"></div>
+				</div>
+
 			<p style="color:#fff;">주소 <br><br>경기도 파주시 회동길 145 아시아출판문화정보센터 <br>승용차 자유로 > 통일동산 방향<br>
 				일산대교 기점 7km 지점에 위치한<br>
 				장월 IC에서 파주출판도시 진입로 표지판을 보고 들어오시면 됩니다.
@@ -556,108 +580,6 @@
 
 
 
-
-<!-- 
-<script>
-	$(document).ready(function() {
-	
-	  var curPage = 1;
-	  var numOfPages = $(".skw-page").length;
-	  var animTime = 1000;
-	  var scrolling = false;
-	  var pgPrefix = ".skw-page-";
-	
-	  function pagination() {
-		scrolling = true;
-	
-		$(pgPrefix + curPage).removeClass("inactive").addClass("active");
-		$(pgPrefix + (curPage - 1)).addClass("inactive");
-		$(pgPrefix + (curPage + 1)).removeClass("active");
-	
-		setTimeout(function() {
-		  scrolling = false;
-		}, animTime);
-	  };
-	
-	  function navigateUp() {
-		if (curPage === 1) return;
-		curPage--;
-		pagination();
-	  };
-	
-	  function navigateDown() {
-		if (curPage === numOfPages) return;
-		curPage++;
-		pagination();
-	  };
-	
-	  $(document).on("mousewheel DOMMouseScroll", function(e) {
-		if (scrolling) return;
-		if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
-		  navigateUp();
-		} else { 
-		  navigateDown();
-		}
-	  });
-	
-	  $(document).on("keydown", function(e) {
-		if (scrolling) return;
-		if (e.which === 38) {
-		  navigateUp();
-		} else if (e.which === 40) {
-		  navigateDown();
-		}
-	  });
-	
-	});
-	</script> -->
-	<!-- <script type="text/javascript">
-	
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-36251023-1']);
-	  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-	  _gaq.push(['_trackPageview']);
-	
-	  (function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	
-	</script> -->
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 끝 -->
-
-
-  
-  <!-- 음.....메뉴 고정해봤는데 안됌 -->
-<!-- <script>
-	$( document ).ready( function() {
-	  var mnOffset = $( '.menu_box' ).offset();
-	  $( window ).scroll( function() {
-		if ( $( document ).scrollTop() > mnOffset.top ) {
-		  $( '.menu_box' ).addClass( 'mnFixed' );
-		}
-		else {
-		  $( '.menu_box' ).removeClass( 'mnFixed' );
-		}
-	  });
-	} );
-  </script> -->
   
   <script>
 	  
@@ -781,20 +703,9 @@
 
 
 
-  <!-- <script src="js/swiper.min.js"></script> -->
-  <!-- <script src="js/wow.min.js"></script> -->
-  <!-- <script src="js/aos.js"></script> -->
-  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-  <!-- <script src="js/assets/jquery.fittext.js"></script> -->
-  <!-- <script src="js/assets/jquery.lettering.js"></script> -->
-  <!-- <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script> -->
-  <!-- <script src="js/assets/jquery.textillate.js"></script> -->
-  <!-- <script src="js/boxSlider.js"></script> -->
   <script src="css/assets/jquery.fittext.js"></script>
   <script src="css/assets/jquery.lettering.js"></script>
   <script src="js/jquery.textillate.js"></script>
-  <!-- <script src="//yandex.st/highlightjs/7.3/highlight.min.js"></script> -->
-  <!-- <script src="js/jquery-2.1.4.js"></script> -->
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=85a7512b7b12cff50deda72905feef18"></script>
   <!-- 지도 -->
   <script src="js/jquery.mobile.custom.min.js"></script>

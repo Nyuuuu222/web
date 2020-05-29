@@ -1,76 +1,56 @@
-// 첫페이지 로딩페이지
+// 섹션3 갤러리
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+// 섹션3 갤러리 끝
 
 
-$(document).ready(function(){
-	$("#fakeLoader").fakeLoader({
-		timeToHide:1200, // 로딩중에 걸리는 시간, 1000은 1초
-		bgColor:"#f8f8f8", // 배경색
-		spinner:"spinner2" // 로딩중으로 원하는 로딩이미지타입
-	});
-});
 
 
 
-
-(function ($) {
-    $.fakeLoader = function(options) {
-
-        var settings = $.extend({
-            targetClass:'fakeLoader',
-            timeToHide:1200,               
-            bgColor: '#2ecc71', 
-            spinner:'spinner2'
-        }, options);
-
-        var spinner01 = '<div class="fl fl-spinner spinner1"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>';
-        var spinner02 = '<div class="fl fl-spinner spinner2"><div class="spinner-container container1"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container2"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container3"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div></div>';
-        var spinner03 = '<div class="fl fl-spinner spinner3"><div class="dot1"></div><div class="dot2"></div></div>';
-        var spinner04 = '<div class="fl fl-spinner spinner4"></div>'; 
-        var spinner05 = '<div class="fl fl-spinner spinner5"><div class="cube1"></div><div class="cube2"></div></div>'; 
-        var spinner06 = '<div class="fl fl-spinner spinner6"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div>'; 
-        var spinner07 = '<div class="fl fl-spinner spinner7"><div class="circ1"></div><div class="circ2"></div><div class="circ3"></div><div class="circ4"></div></div>'; 
-
-        var el = $('body').find('.' + settings.targetClass);
-
-        el.each(function() {
-            var a = settings.spinner;
-            
-                switch (a) {
-                    case 'spinner1':
-                            el.html(spinner01);
-                        break;
-                    case 'spinner2':
-                            el.html(spinner02);
-                        break;
-                    case 'spinner3':
-                            el.html(spinner03);
-                        break;
-                    case 'spinner4':
-                            el.html(spinner04);
-                        break;
-                    case 'spinner5':
-                            el.html(spinner05);
-                        break;
-                    case 'spinner6':
-                            el.html(spinner06);
-                        break;
-                    case 'spinner7':
-                            el.html(spinner07);
-                        break;
-                    default:
-                        el.html(spinner01);
-                    }
+/* 카카오맵 스크롤 제어 */
+        //해당 영역안에서는 스크롤을 별도로 처리하게끔 (장점: 바디 스크롤바 고정, 단점: 스크롤 가속 없음)
+        $('#map-scroll-fixed').on('mousewheel', function (e) {
+            if (e.originalEvent.wheelDelta >= 120) {
+                this.scrollTop -= 50;
+            } else if (e.originalEvent.wheelDelta <= -120) {
+                this.scrollTop += 50;
+            }
+            return false;
         });
 
-        el.css({
-            'backgroundColor':settings.bgColor
-        });
+/* 카카오맵 스크롤 제어 끝 */
 
-        setTimeout(function () {
-            $(el).fadeOut();
-        }, settings.timeToHide);
-    }; 
-}(jQuery));
+
+
+/* 첫페이지 로딩페이지 */
+
+/* 첫페이지 로딩페이지 끝 */
 
 
 
