@@ -1,4 +1,17 @@
 // 첫페이지 로딩페이지
+
+
+$(document).ready(function(){
+	$("#fakeLoader").fakeLoader({
+		timeToHide:1200, // 로딩중에 걸리는 시간, 1000은 1초
+		bgColor:"#f8f8f8", // 배경색
+		spinner:"spinner2" // 로딩중으로 원하는 로딩이미지타입
+	});
+});
+
+
+
+
 (function ($) {
     $.fakeLoader = function(options) {
 
