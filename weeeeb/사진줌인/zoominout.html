@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image Zoom Tour with jQuery</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Image Zoom Tour with jQuery" />
+        <meta name="keywords" content="jquery, zoom, tour, images, zoom in, zoom out, plugin, css3" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+		</noscript>
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='https://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css' />
+<script type="text/javascript">
+//PLEASE DON'T ADD THIS TO YOUR SITE! PLEASE DOWNLOAD THE ZIP AND DON'T COPY THIS PAGE! THIS IS THE GOOGLE ANALYTICS TRACKING FOR CODROPS
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7243260-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    </head>
+    <body>
+		<div class="container">
+
+
+			<div id="zt-container" class="zt-container">
+				<div class="zt-item" data-id="zt-item-1">
+					<img class="zt-current" src="images/img01.png" />
+					<div class="zt-tag" data-dir="1" data-link="zt-item-2" data-zoom="14" data-speed="950" data-delay="150" style="top:69px;left:65px;"></div>
+					<div class="zt-tag" data-dir="1" data-link="zt-item-3" data-zoom="6" data-speed="850" data-delay="20" style="width:150px;height:111px;top:241px;left:135px;"></div>
+					<div class="zt-tag" data-dir="1" data-link="zt-item-4" data-zoom="9" data-speed="800" data-delay="70" style="top:227px;left:346px;"></div>
+					<div class="zt-tag" data-dir="1" data-link="zt-item-5" data-zoom="12" data-speed="800" data-delay="150" style="top:73px;left:410px;"></div>
+					</div>
+				<div class="zt-item" data-id="zt-item-2">
+					<img class="zt-current" src="images/img02.png" />
+					<div class="zt-tag" data-dir="1" data-link="zt-item-6" data-zoom="6" data-speed="950" data-delay="150" style="top:348px;left:459px;"></div>
+					<div class="zt-tag zt-tag-back" data-dir="-1" data-link="zt-item-1" data-zoom="14" data-speed="750" data-delay="80"></div>
+					</div>
+				<div class="zt-item" data-id="zt-item-3">
+					<img class="zt-current" src="images/img03.png" />
+					<div class="zt-tag zt-tag-back" data-dir="-1" data-link="zt-item-1" data-zoom="6" data-speed="550" data-delay="20"></div>
+					</div>
+				<div class="zt-item" data-id="zt-item-4">
+					<img class="zt-current" src="images/img04.jpg" />
+					<div class="zt-tag zt-tag-back" data-dir="-1" data-link="zt-item-1" data-zoom="9" data-speed="700" data-delay="70"></div>
+					</div>
+				<div class="zt-item" data-id="zt-item-5">
+					<img class="zt-current" src="images/img05.jpg" />
+					<div class="zt-tag zt-tag-back" data-dir="-1" data-link="zt-item-1" data-zoom="12" data-speed="700" data-delay="10"></div>
+					</div>
+				<div class="zt-item" data-id="zt-item-6">
+					<img class="zt-current" src="images/img06.jpg" />
+					<div class="zt-tag zt-tag-back" data-dir="-1" data-link="zt-item-2" data-zoom="12" data-speed="700" data-delay="20"></div>
+				</div>
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.transform-0.9.3.min_.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.zoomtour.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#zt-container').zoomtour();	
+			});
+		</script>
+
+    </body>
+</html>

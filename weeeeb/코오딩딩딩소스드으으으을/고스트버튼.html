@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+
+#header{
+    background-color: #6a8487;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a.author{
+    color: gray;
+}
+
+label, #toggle{
+    display: none;
+}
+
+#nav{
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+#nav li{
+    display: inline;
+}
+
+#contents{
+    min-height: 200px;
+    background: #d9efdd;
+}
+#footer{
+    background-color: #eaeaea;
+    font-size: 13px;
+}
+
+.btn{
+    z-index: 99999;
+}
+
+.Fixed { position: fixed; top: 0px; }
+
+
+
+.jbTitle {
+        text-align: center;
+      }
+      .jbMenu {
+        text-align: center;
+        background-color: yellow;
+        padding: 10px 0px;
+        width: 100%;
+      }
+      .jbContent {
+        height: 2000px;
+      }
+      .jbFixed {
+        position: fixed;
+        top: 0px;
+      }
+
+
+
+
+
+
+/* 안드로이드 버그 고정 */
+
+body{
+    -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfis{
+    from{
+        padding: 0;
+    }
+    to{
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    #nav{
+        display: none;
+    }
+    /* #toggle:checked + #nav{
+        display: block;
+    }
+    #nav li{
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #ccc;
+        padding: 4px;
+
+    }
+    label{
+        display: block;
+        text-align: center;
+        background: url('logo.png');
+        background-repeat: no-repeat;
+        background-position: 97% 10px;
+        background-size: 24px 19px;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 4px 3%;
+
+    } */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 메뉴버튼 슬라이드 */
+        /* html, body{
+            height: 100%;
+        }
+        body{
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+        }
+        #hamburger{
+            display: none;
+        }
+        #hamburger ~ * {
+            position: absolute;
+            transition: transform 0.4s;
+        }
+        #hamburger:checked ~ *{
+            transform: translate3d(-200px,0,0);
+        }
+        #hamburger ~ label{
+            font-size: 54px;
+            top: -16px;
+            right: 8px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        #hamburger ~ nav{
+            background: black;
+            width: 200px;
+            right: -200px;
+            height: 100%;
+        }
+        #hamburger ~ nav *{
+            margin: 0; padding: 0;
+            color: white;
+        }
+        #hamburger ~ nav header{
+            background: teal;
+            padding: 1em;
+        }
+        #hamburger ~ nav a{
+            display: block;
+            text-decoration: none;
+            padding: 1em;
+        }
+
+    #hamburger ~ nav a:hover{
+        background: gray;
+    }
+
+    #content{
+        position: relative;
+        padding: 2.6em 1em 1em;
+        width: 100%;
+        background: silver;
+    } */
+    
+
+    </style>
+ <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+
+$(".btn").click(function(){
+    $("#contents").slideToggle().css("display","block");
+})
+
+
+
+
+$(window).resize(function() { 
+    if($(window).width() <480) {       
+            $( '.btn' ).show();
+          }
+          else {
+            $( '.btn' ).hide();
+          }
+        });
+ 
+
+
+
+
+        $(function(){
+$(window).scroll(function(){  
+       var num = $(this).scrollTop();  
+       if( num > 0 ){ 
+          $(".btn").css("position","fixed");
+       }else{
+           $(".btn").css("position","absolute");
+       }
+  });
+
+    </script>
+</head>
+<body>
+
+
+<div id="header">
+    <div class="btn">
+    <label for="toggle" onclick>Menu</label>
+    <input type="checkbox" id="toggle">
+</div>
+    <ul id="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Guest</a></li>
+        <li><a href="#">Notice</a></li>
+    </ul>
+</div>
+
+<div id="contents">
+    <h1>본문</h1>
+</div>
+<div id="footer">
+    Designed by commaeng
+    <a class="author" href="http://www.illyweb.com" title="Anton Saputro">Anton Saputro</a> from
+    <a href="http://www.illyweb.com" class="author" title="Flaticon">http://www.illyweb.com</a>
+    is licensed by <a href="" class="author" title="Create Commons BY 3.0">CC BY commaeng</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 메뉴버튼 슬라이드 -->
+    <!-- <input id="hamburger" type="checkbox" /><label for="hamburger">&equiv;</label>
+    <nav>
+        <header>메뉴</header>
+        <ul>
+            <li><a href="#">한놈</a></li>
+            <li><a href="#">두놈</a></li>
+            <li><a href="#">세놈</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <h1>css슬라이드 메뉴 예쩨</h1>
+        <p>ㅏ일뮈ㅏㄱ수비ㅏ구비ㅏ구ㅡ니ㅜ 치무 이마ㅜ디ㅏ북시ㅏ부ㅡ기ㅏ브이마우ㅢ마우ㅢㅏㅂ귀ㅏㅂ귀밪귀바즈차ㅣ므니아ㅡㅁ이ㅏ믄</p>
+    </div> -->
+</body>
+</html>

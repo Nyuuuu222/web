@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://rhehfwlgp.cafe24.com/pf/js/jquery.fullPage.js"></script>
+<link rel="stylesheet" type="text/css" href="http://rhehfwlgp.cafe24.com/pf/css/jquery.fullPage.css">
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage','4rdPage','5rdPage'],
+				sectionsColor: ['#fff', '#fff', '#fff','#fff', '#fff'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['Home', 'Profile', 'Homepage&Event', 'Mobile', 'detailpage'],
+				responsiveWidth: 700
+	});
+});
+</script>
+</head>
+<body>
+<h1>오른쪽에 동그란 블릿이 현재의 섹션을 표시합니다.</h1>
+<div id="fullpage">
+
+		<div class="section">
+			섹션0
+		</div>		   
+		
+		<div class="section">
+			섹션1
+		</div> <!--setion1-->		
+		
+		<div class="section">
+			섹션2
+		</div><!--section2-->	   
+		   
+		<div class="section">
+			섹션3
+		</div><!--section3-->		   
+		   
+		<div class="section">
+			섹션4
+		</div><!--section4--> 
+    
+</div>
+
+
+</body>
+</html>

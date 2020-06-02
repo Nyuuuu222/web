@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<title>화면 상단 고정 메뉴 만드는 방법</title>    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+	// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+</script>
+<style>
+*		{ color: transparent; margin:0; padding:0;}
+body	{ padding-top: 40px;}
+header	{
+		background:rgba(42,0,255,1); color:white; text-align:center;
+		height: 50px; top: 0; width: 100%; padding:50px;
+		position: fixed; z-index:1; transition: top 0.2s ease-in-out;   
+}
+.nav-up { top: -100px; background:rgba(173,124,54,0.7); }
+section { padding:400px; background:#eee; color:black;}
+</style>
+</head>
+<body>
+<header class="nav-down"></header>
+<section>상단 내비게이션 부분의 위치를 고정 시켜둔 후, 마우스 휠을 사용하거나 내비게이션을 클릭할 때,  상단영역이 없어지가 하거나, 상단 높이를 변경시키거나, 상단의 배경색의 투명도를 조절할 수 있습니다. </section>
+</body>
+</html>
