@@ -11,9 +11,9 @@ $(function(){
 
 setInterval(function(){            
     $(".slide-all").delay("2500");       
-    $(".slide-all").animate({marginTop:"-300px" },"500");  
+    $(".slide-all").animate({marginTop:"-304px" },"500");  
     $(".slide-all").delay("2500");                          
-    $(".slide-all").animate({marginTop:"-600px" },"500");  
+    $(".slide-all").animate({marginTop:"-608px" },"500");  
     $(".slide-all").delay("2500");                          
     $(".slide-all").animate({marginTop:"0" },"500");       
   });
@@ -33,9 +33,6 @@ setInterval(function(){
         $(".tab2").css("background","white")
     })
  })
-
-
-
 
 
 
