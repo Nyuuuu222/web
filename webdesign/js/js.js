@@ -17,7 +17,7 @@ setInterval(function(){
     $(".slide-all").delay("2500");                          
     $(".slide-all").animate({marginTop:"0" },"500");       
   });
-
+ 
 
  $(function(){
      $(".tab1").click(function(){

@@ -127,7 +127,7 @@ nav{
 .tab .tab2{
     background-color: #cccccc;
 }
-.gallery{
+.gallery{ 
     /* border: 1px solid black; */
     display: none;
     height: 137px;
