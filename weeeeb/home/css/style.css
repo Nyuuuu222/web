@@ -37,16 +37,18 @@ body:after {
 .nav {
   overflow: hidden;
   position: absolute;
-  right: 13.1%;
-  top: 7%;
+  right: 0%;
+  top: 2%;
+
   width: auto;
-  height: 90px;
-  margin-top: -45px;
+
   /* background: #242424; */
   border-radius: 5px;
+
+  /* box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2); */
   -webkit-transform: translate3d(-50%, 0, 0);
           transform: translate3d(-50%, 0, 0);
-  /* box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2); */
+  /* 아이콘 클릭 이동 */
   z-index: 999999999;
   
 }
@@ -61,7 +63,7 @@ body:after {
 .nav__content {
   position: relative;
   width: 90px;
-  height: 100%;
+
   -webkit-transition: width 1s cubic-bezier(0.49, -0.3, 0.68, 1.23);
   transition: width 1s cubic-bezier(0.49, -0.3, 0.68, 1.23);
 }
@@ -72,8 +74,8 @@ body:after {
 }
 .nav__items {
   position: relative;
-  width: 1500px;
-  height: 100%;
+  width: 1000px;
+
   padding-left: 20px;
   padding-right: 110px;
   list-style-type: none;
@@ -82,11 +84,11 @@ body:after {
 .nav__item {
   display: inline-block;
   vertical-align: top;
-  width: 70px;
+
   text-align: center;
   color: #6C7784;
   font-size: 14px;
-  line-height: 90px;
+line-height: 100px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   -webkit-perspective: 1000px;
@@ -110,6 +112,7 @@ body:after {
   transition: transform 0.7s cubic-bezier(0.48, 0.43, 0.7, 2.5), opacity 0.7s, -webkit-transform 0.7s cubic-bezier(0.48, 0.43, 0.7, 2.5);
 }
 .nav__cb:checked ~ .nav__content .nav__item-text {
+  padding: 0 10px;
   -webkit-transform: rotateY(0);
           transform: rotateY(0);
   opacity: 1;
