@@ -328,6 +328,7 @@ Slider Navigation
  */
 
 
+
  @media only screen and (max-width: 900px) {
   .cd-slider li {
     pointer-events: none;
@@ -430,7 +431,6 @@ Slider Navigation
 }
 
 }
-
 
 
 

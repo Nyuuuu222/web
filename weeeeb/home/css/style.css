@@ -1,3 +1,19 @@
+/* 메뉴스크롤이동 쌤 */
+
+.fixed{
+  background:rgba(0,0,0,0.5); transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out;}
+
+
+
+
+
+
+
+
+
+
+
+
 /* 네비게이션 */
 *, *:before, *:after {
   box-sizing: border-box;
@@ -32,6 +48,7 @@ body:after {
           transform: translate3d(-50%, 0, 0);
   /* box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2); */
   z-index: 999999999;
+  
 }
 .nav__cb {
   z-index: -1000;
@@ -800,6 +817,7 @@ img {
     display: flex;
   }
   .box___1{
+    width: 100%;
     display: flex;
     position: relative;
     justify-content: space-around;
@@ -847,9 +865,9 @@ img {
   }
   .forestOfwisdom:hover .after_1 {
     display: block;
-    padding: 27% 8%;
+    padding: 10% 4%;
     /* line-height: 10px; */
-    width: 881px;
+    width: 100%px;
     background: rgba(0, 0, 0, .6);
     
   }
@@ -859,13 +877,34 @@ img {
     font-size: 1.4em;
     line-height: 1.6;
     font-weight: 300;
-    padding: 5% -1.5%;
+    /* padding: 5% -1.5%; */
     text-align: justify;
+
   }
   
+  .forestOfwisdom img{
+    width: 100%;
+    }
+.after_1{
+    width: 100%;
+  }
 
-  
 
+
+  @media (max-width :900px){
+    .box___1{
+      display: block;
+    }
+    .forestOfwisdom{
+      height: 40vh;
+    }
+    .after_1{
+      height: 40vh;
+      width: 100%;
+    }
+
+
+  }
 
 
 
@@ -884,6 +923,10 @@ img {
 
 
 @media (max-width :767px){
+  .nav__cb{
+    right: 20px;!important;
+    
+  }
     .menu_box{
       padding-top: 7%;
     }
