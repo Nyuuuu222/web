@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            color: #242424;
+            font-size: 1rem;
+        }
+
+        body{
+            background: white;
+        }
+
+        .all_box{
+            width: 1000px;
+            height: 650px;
+            display: flex;
+        }
+        .right_box{
+            width: 760px;
+            height: auto;
+            background: violet;
+        }
+        .left_box{
+            width: 240px;
+            height: auto;
+            
+        }
+
+        .logo_box{
+            width: 200px;
+            height: 40px;
+            margin: 20px;
+        }
+
+        /* 네비 */
+
+        nav{
+            margin: 0 auto;
+            width: 200px;
+            height: auto;
+            text-align: center;
+
+        }
+        nav>ul{
+            font-size: 0;
+
+        }
+        nav>ul>li:hover>a{
+            background: #242424;
+            color: white;
+            transition: all 0.4s;
+        }
+        nav>ul>li>a{
+            display: block;
+            width: 200px;
+            line-height: 40px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border: 2px solid #242424;
+            margin-bottom: -2px;
+            transition: all 0.4s;
+        }
+        .submenu{
+            display: none;
+            
+        }
+        .submenu>li:hover>a{
+            background: #242424;
+            color: white;
+            transition: all 0.4s;
+        }
+        .submenu>li>a{
+            display: block;
+            width: 204px;
+            line-height: 30px;
+            font-weight: 500;
+            transition: all 0.4s;
+        }
+
+    </style>
+    <script src="js/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+
+    <div class="all_box">
+        <div class="left_box">
+            <header>
+                <div class="logo_box">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">축제소개</a>
+                            <ul class="submenu">
+                                <li><a href="#">초대의 글</a></li>
+                                <li><a href="#">축제개요</a></li>
+                                <li><a href="#">축제연혁</a></li>
+                                <li><a href="#">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">축제소개</a>
+                            <ul class="submenu">
+                                <li><a href="#">초대의 글</a></li>
+                                <li><a href="#">축제개요</a></li>
+                                <li><a href="#">축제연혁</a></li>
+                                <li><a href="#">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">축제소개</a>
+                            <ul class="submenu">
+                                <li><a href="#">초대의 글</a></li>
+                                <li><a href="#">축제개요</a></li>
+                                <li><a href="#">축제연혁</a></li>
+                                <li><a href="#">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">축제소개</a>
+                            <ul class="submenu">
+                                <li><a href="#">초대의 글</a></li>
+                                <li><a href="#">축제개요</a></li>
+                                <li><a href="#">축제연혁</a></li>
+                                <li><a href="#">오시는길</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="right_box">
+
+        </div>
+    </div>
+
+    <script>
+        $('nav>ul>li').mouseenter(function(){
+            $(this).children('.submenu').slideDown()
+        })
+        $('nav>ul>li').mouseleave(function(){
+            $(this).children('.submenu').slideUp()
+        })
+    </script>
+</body>
+</html>

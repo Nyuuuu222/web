@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.slidebanner {
+    position: relative;
+    height: 50px;
+    width: 985px;
+    overflow: hidden;
+}
+
+.slidebanner .bannerbox {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.slidebanner li {
+    float: left;
+    list-style: none;
+    margin-left: 10px
+}
+
+.slidebanner li:first-child {
+    margin: 0
+}
+/*
+slidebanner는 적당한 넓이와 높이값을 가져야 합니다.
+width:985px;height:100px;
+*/
+    </style>
+    <script src="js/jquery-1.12.3.min.js"></script>
+
+
+    
+    <script>
+        timer();
+var current=0;
+var $interval;
+
+function timer(){
+  var $interval=setInterval(function(){slide()},2000);                        
+}
+
+function slide(){
+  $(".bannerbox").animate({left:"-=187px"},1000,function(){
+    $(this).css({"left":0});
+    $(".bannerbox").append( $("ul").children("li").eq(0) );
+  });    
+  current++;
+  if(current==5)current=0;
+}    
+    </script>
+</head>
+<body>
+    <div class="slidebanner">
+        <ul class="bannerbox">    
+          <li><img src="http://placehold.it/187x50/E64E4F" alt="dw" /></li>
+          <li><img src="http://placehold.it/187x50/7992D9" alt="dw" /></li>
+          <li><img src="http://placehold.it/187x50/4CD336" alt="dw" /></li>
+          <li><img src="http://placehold.it/187x50/FFA500" alt="dw" /></li>
+          <li><img src="http://placehold.it/187x50" alt="dw" /></li>
+          <li><img src="http://placehold.it/187x50/E64E4F" alt="dw" /></li>
+          <li><img src="http://placehold.it/187x50/7992D9" alt="dw" /></li>
+          <li><img src="http://placehold.it/187x50/4CD336" alt="dw" /></li>
+          <li><img src="http://placehold.it/187x50/FFA500" alt="dw" /></li>
+          <li><img src="http://placehold.it/187x50" alt="dw" /></li>
+        </ul>                
+      </div>
+      
+      <hr />
+      <h3>사용방법</h3>
+      <ul>
+        <li>1. 이미지를 여러 개 보여주고 싶을 경우
+          <ol>
+            <li>css의 4번째줄의 width값을 원하는 넓이만큼 조정한다.</li>
+          </ol>
+        </li>
+        <li>2. 이미지를 한 개만 보여주고 싶을 경우
+          <ol>
+            <li>css의 4번째줄의 width값을 한개의 이미지 넓이만큼 조정한다.</li>
+          </ol>
+        </li>
+        <li>3. 이미지를 넓이를 조정하고 싶을 경우
+          <ol>
+            <li>js의 10번째줄의 width값을 한개의 이미지 넓이만큼 조정한다.</li>
+          </ol>
+        </li>
+        <li>4. 슬라이드 후 정지한 텀 간격을 줄이고 싶을 경우
+          <ol>
+            <li>js의 6번째줄의 시간 간격을 조정한다.</li>
+            <li>js의 10번째줄의 시간 간격을 조정한다.</li>
+          </ol>
+        </li>
+      </ul>
+      
+
+      
+
+</body>
+</html>

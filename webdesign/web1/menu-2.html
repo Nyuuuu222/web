@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #242424;
+    font-size: 1rem;
+}
+
+body{
+    background: white;
+}
+
+
+.all_box{
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+header{
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo_box{
+    width: 200px;
+    height: 40px;
+    margin: 30px;
+}
+
+
+/* 메뉴시작 */
+
+nav{
+    height: auto;
+    margin-top: 58px;
+    margin-left: 300px;
+    z-index: 9;
+}
+nav>ul{
+    text-align: center;
+    font-size: 0;
+    display: flex;
+}
+nav>ul>li:hover>a{
+ background: white;
+ color: slategray;
+}
+nav>ul>li>a{
+    display: block;
+    width: 130px;
+    line-height: 40px;
+    border: 1px solid white;
+    margin-left: -1px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    background: slategray;
+    box-sizing: border-box;
+}
+.submenu{
+    display: none;
+    background: slategray;
+    margin-left: -1px;
+    
+}
+
+.submenu>li{
+    line-height: 40px;
+}
+.submenu a{
+    color: white;
+}
+.submenu>li:hover{
+    background: white;
+}
+.submenu>li:hover>a{
+    color: slategray;
+}
+.nav_bg{
+    width: 1200px;
+    position: absolute;
+    height: 150px;
+    background: slategray;
+    top: 100px;
+    z-index: 0;
+    display: none;
+}
+
+
+
+section{
+    width: 100%;
+    height: 300px;
+    background: aquamarine;
+}
+    </style>
+    <script src="js/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+    <div class="all_box">
+        <header>
+            <div class="logo_box">
+                <img src="images/logo.png" alt="">
+            </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">재단소개</a>
+                            <ul class="submenu">
+                                <li><a href="#">설립취지</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">찾아오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">재단소개</a>
+                            <ul class="submenu">
+                                <li><a href="#">설립취지</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">찾아오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">재단소개</a>
+                            <ul class="submenu">
+                                <li><a href="#">설립취지</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">찾아오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">재단소개</a>
+                            <ul class="submenu">
+                                <li><a href="#">설립취지</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">찾아오시는길</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            <div class="nav_bg"></div>
+        </header>
+        <section></section>
+    </div>
+
+<script>
+    $('nav>ul>li').hover(function(){
+        $('.submenu').stop().slideToggle()
+        $('.nav_bg').stop().slideToggle()
+
+    })
+</script>
+</body>
+</html>

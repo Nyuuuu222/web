@@ -1,0 +1,421 @@
+
+	        * {
+	            margin: 0;
+	            padding: 0;
+	        }
+
+	        li {
+	            list-style: none;
+	        }
+
+	        a {
+	            text-decoration: none;
+	            color: inherit;
+	        }
+
+	        .all {
+	            width: 1200px;
+	            margin: 0 auto;
+	        }
+
+	        header {
+	            width: 1200px;
+	            height: 100px;
+	            position: relative;
+	        }
+
+	        .logo {
+	            float: left;
+	            text-align: center;
+	            padding: 30px 0;
+	            width: 300px;
+	        }
+
+	        .navi-menu {
+	            position: relative;
+	            float: left;
+	            width: 150px;
+	            height: 40px;
+	            text-align: center;
+	            background-color: #3cb149;
+	        }
+
+	        .navi-menu>a {
+	            width: 150px;
+	            height: 40px;
+	            font-size: 16px;
+	            transition: all 0.5s;
+	            color: white;
+	            line-height: 40px;
+	        }
+
+	        .navi-menu:hover {
+	            background-color: #434748;
+	            color: #3cb149;
+	            font-weight: 800;
+	        }
+
+	        .submenu_box>a {
+	            display: block;
+	            line-height: 32px;
+	            width: 150px;
+	            height: 30px;
+	            text-align: center;
+	            font-size: 10pt;
+	            color: white;
+	            transition: 0.5s;
+	        }
+
+	        .submenu_box>a:hover {
+	            background-color: white;
+	            color: #333333;
+	            font-weight: bold;
+	        }
+
+	        /* header */
+	        .section-01 {
+	            width: 1200px;
+	            height: 300px;
+	            background-color: lavender;
+	        }
+
+	        /* section-01 */
+
+
+
+
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #333333;
+    font-size: 14pt;
+    text-decoration: none;
+    list-style: none;
+}
+
+.index_box {
+    width: 1200px;
+    height: 700px;
+    background: #ffffff;
+    margin: 0 auto;
+}
+
+.popup_window {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 150px;
+    left: 400px;
+}
+
+.popup_content {
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    background: white;
+    border: 5px solid #30a3f3;
+}
+
+.popup_top {
+    height: 90%;
+}
+
+.popup_top h3 {
+    color: #30a3f3;
+    height: 40px;
+}
+
+.팝업닫기 {
+    background-color: #333333;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.팝업버튼 {
+    cursor: pointer;
+}
+
+/*----헤더시작----*/
+#header_box {
+    height: 100px;
+    position: relative;
+}
+
+.logo_box {
+    float: left;
+    width: 180px;
+    height: 40px;
+    padding: 30px 25px;
+}
+
+/*---메뉴네비게이션---*/
+.navi_box {
+    position: absolute;
+    float: right;
+    width: 800px;
+    height: 30px;
+    top: 40px;
+    left: 380px;
+}
+
+.navi_box>ul {
+    display: inline;
+}
+
+.navi_box>ul>li {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    background: #30a3f3;
+}
+
+.menu {
+    display: block;
+    width: 180px;
+    height: 20px;
+    margin: 10px 10px;
+}
+
+.navi_box>ul>li:hover {
+    background: #0066ad;
+    transition: 1s;
+}
+
+.navi_box>ul>li:hover>a {
+    font-weight: 800;
+    color: white;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    z-index: 2;
+}
+
+.submenu>li {
+    width: 200px;
+    height: 20px;
+    padding: 10px 0;
+}
+
+.submenu>li>a {
+    color: white;
+}
+
+.submenu>li:hover {
+    background: white;
+}
+
+.submenu>li:hover>a {
+    font-weight: 800;
+    color: #333333;
+}
+
+/*-----이미지슬라이드-----*/
+#slide_box {
+    position: relative;
+    height: 300px;
+}
+
+#slide_box>a {
+    position: absolute;
+    width: 1200px;
+    height: 300px;
+}
+
+/*-----컨텐츠-----*/
+#contents_box {
+    height: 200px;
+    background: #0066ad;
+}
+
+/*----탭메뉴---*/
+.left_contents {
+    display: block;
+    float: left;
+    width: 380px;
+    height: 180px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.tab_menu {
+    width: 380px;
+    height: 30px;
+}
+
+.tab_menu li a {
+    float: left;
+    width: 100px;
+    height: 22px;
+    padding: 4px 0;
+    text-align: center;
+    background: silver;
+}
+
+.tab_menu li a:hover,
+.tab_menu li a:hover::after,
+.tab_menu li a:focus,
+.tab_menu li a:focus::after {
+    background: white;
+}
+
+.tab_menu li a::after {
+    position: absolute;
+    background: silver;
+}
+
+.tab_menu #current a,
+.tab_menu #current a::after {
+    background: white;
+    z-index: 3;
+}
+
+.content {
+    position: relative;
+    width: 350px;
+    height: 120px;
+    background: white;
+    padding: 15px;
+    20px;
+}
+
+.tab1 {
+    width: 350px;
+    height: 120px;
+}
+
+.tab1 ul div a {
+    float: left;
+    font-size: 0.8rem;
+    color: dimgrey;
+    line-height: 28px;
+}
+
+.tab1 ul div span {
+    float: right;
+    font-size: 0.8rem;
+    color: dimgrey;
+    line-height: 28px;
+}
+
+.tab1 ul div a:hover {
+    color: #333333;
+    font-weight: 800;
+}
+
+.tab2 {
+    width: 350px;
+    height: 120px;
+}
+
+.tab2 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab2 ul li {
+    display: inline-block;
+}
+
+.tab2 ul li a img {
+    width: 110px;
+    height: 110px;
+}
+
+/*----탭메뉴끝---*/
+.mini_banner {
+    display: block;
+    float: left;
+    width: 400px;
+    height: 100%;
+}
+
+.mini_banner>a {
+    display: block;
+    height: 180px;
+    margin: 10px;
+}
+
+.direct_link {
+    display: block;
+    float: left;
+    width: 400px;
+    height: 200px;
+}
+
+.direct_link>a {
+    display: block;
+    height: 180px;
+    margin: 10px;
+}
+
+#footer_box {
+    height: 100px;
+    background: #333333;
+}
+
+.bottom_logo {
+    float: left;
+    width: 180px;
+    height: 40px;
+    padding: 30px 25px;
+}
+
+.footer_right {
+    float: right;
+    width: 970px;
+    height: 100px;
+}
+
+.bottom_menu {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.bottom_menu>ul {
+    display: inline;
+    color: silver;
+    font-size: 0.7rem;
+}
+
+.bottom_menu>ul>li {
+    display: inline-block;
+}
+
+.bottom_menu>ul>li>a {
+    color: silver;
+    font-size: 0.7rem;
+    margin: 30px;
+}
+
+.bottom_menu>ul>li>a:hover {
+    color: white;
+}
+
+.copyright {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.copyright a {
+    color: silver;
+    font-size: 0.7rem;
+}
+

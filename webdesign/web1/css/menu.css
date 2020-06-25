@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #242424;
+    font-size: 1rem;
+}
+
+body {
+    background: white;
+}
+
+.all_box {
+    margin: 0 auto;
+    width: 1200px;
+    height: 700px;
+}
+
+section div {
+    width: 100%;
+    height: 300px;
+    background: #bd2727;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+
+}
+
+
+.logo_box {
+    width: 200px;
+    height: 40px;
+    margin: 20px;
+}
+
+
+
+nav {
+    height: auto;
+    margin-top: 10px;
+    margin-right: 40px;
+    border: 1px solid slategrey;
+    float: right;
+}
+
+nav>ul {
+    text-align: center;
+    font-size: 0;
+
+}
+
+nav>ul>li {
+    display: inline-block;
+    background: rgb(110, 96, 96);
+}
+
+nav>ul>li>a {
+    display: block;
+    width: 130px;
+    line-height: 40px;
+    border-left: 1px solid slategrey;
+    box-sizing: border-box;
+}
+
+nav>ul>li:first-child>a {
+    border-left: none;
+
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    margin-top: 1px;
+    margin-left: -1px;
+    background: white;
+    border-bottom: 1px solid slategrey;
+}
+
+.submenu1 {
+    border-left: 1px solid slategrey;
+}
+
+.submenu4 {
+    border-right: 1px solid slategrey;
+}
+
+.submenu>li {
+    width: 131px;
+    line-height: 30px;
+}
+
+
+
+nav>ul>li:hover>a {
+    background: #bd2727;
+    color: white;
+    font-weight: 500;
+}
+
+.submenu>li:hover {
+    background: pink;
+}
+
+.submenu>li:hover>a {
+    color: white;
+    font-weight: 500;
+}

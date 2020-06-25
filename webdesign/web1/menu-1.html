@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        color: #242424;
+        font-size: 1rem;
+    }
+    body{
+        background: white;
+    }
+
+    .all_box{
+        width: 1200px;
+        height: 700px;
+        margin: 0 auto;
+    }
+    section{
+        width: 1200px;
+        height: 300px;
+        background: saddlebrown;
+    }
+
+
+    /* 헤더 */
+    header{
+        width: 100%;
+        height: 100px;
+    }
+
+    .logo_box{
+        width: 200px;
+        height: 40px;
+        margin: 20px;
+    }
+    nav{
+        float: right;
+        text-align: center;
+        border: 1px solid #242424;
+        margin-right: 40px;
+    }
+    nav>ul{
+        font-size: 0;
+
+    }
+    nav>ul>li{
+        display: inline-block;
+        background: cadetblue;
+
+    }
+
+    nav>ul>li:hover>a{
+        background: white;
+        color: cadetblue;
+        font-weight: 600;
+    }
+    nav>ul>li>a{
+        display: block;
+        width: 130px;
+        line-height: 40px;
+        border-left: 1px solid #242424;
+        box-sizing: border-box;
+        color: white;
+
+    }
+    nav>ul>li:first-child>a{
+        border-left: none;
+    }
+    
+
+    .submenu{
+        display: none;
+        position: absolute;
+        background: cadetblue;
+        margin-left: -1px;
+        border-bottom: 1px solid #242424;
+        border-top: 1px solid #242424;
+
+    }
+    .submenu>li{
+        width: 131px;
+        line-height: 30px;
+        
+
+    }
+    .submenu>li:hover{
+        background: white;
+    }
+    .submenu>li:hover>a{
+        color: cadetblue;
+        font-weight: 500;
+    }
+    .submenu>li>a{
+        color: white;
+    }
+
+    .submenu1{
+        border-left: 1px solid #242424;
+    }
+    .submenu4{
+        border-right: 1px solid #242424;
+    }
+
+
+
+
+
+</style>
+<script src="js/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+    <div class="all_box">
+        <header>
+            <div class="logo_box">
+                <img src="images/logo.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">악세서리</a>
+                        <ul class="submenu submenu1">
+                            <li><a href="#">귀고리</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">팔찌</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">악세서리</a>
+                        <ul class="submenu">
+                            <li><a href="#">귀고리</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">팔찌</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">악세서리</a>
+                        <ul class="submenu">
+                            <li><a href="#">귀고리</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">팔찌</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">악세서리</a>
+                        <ul class="submenu submenu4">
+                            <li><a href="#">귀고리</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">팔찌</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section></section>
+    </div>    
+
+
+
+
+
+
+<script>
+$('nav>ul>li').hover(function(){
+    $('.submenu').stop().slideToggle();
+});
+
+
+</script>
+</body>
+</html>

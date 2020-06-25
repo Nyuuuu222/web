@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+* {
+    color: #333333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: #ffffff;
+}
+
+#index_box {
+    margin: 0 auto;
+    width: 1200px;
+    height: 700px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+#logo {
+    width: 200px;
+    height: 40px;
+    padding: 30px;
+    float: left;
+}
+
+nav {
+    float: right;
+    margin-right: 50px;
+    margin-top: 58px;
+    display: inline;
+    text-align: center;
+}
+
+nav>ul {
+    display: inline;
+    font-size: 0;
+    height: 200px;
+}
+
+nav>ul>li {
+    display: inline-block;
+    width: 150px;
+}
+
+nav>ul>li>a {
+    display: block;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    background: #00c73c;
+}
+
+.sub_menu {
+    display: none;
+    position: absolute;
+    margin-left: 0;
+    width: 150px;
+    height: 150px;
+    background: #737373;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.sub_menu>li {
+    display: block;
+    padding: 10px 0;
+    color: white;
+}
+
+.sub_menu>li>a {
+    color: white;
+}
+
+nav>ul>li:hover>a {
+    background: #737373;
+    color: #00c73c;
+}
+
+.sub_menu>li:hover {
+    background: #00c73c;
+}
+
+.sub_menu>li:hover>a {
+    color: #333333;
+    font-weight: 800;
+}
+
+.menu_bg {
+    display: none;
+    position: absolute;
+    width: 1200px;
+    height: 170px;
+    background: #737373;
+    margin-left: -550px;
+    z-index: 3;
+}
+
+#slide {
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#slide_wrap {
+    font-size: 0;
+}
+
+#contents {
+    height: 200px;
+}
+
+article {
+    width: 480px;
+    height: 180px;
+    float: left;
+    padding: 10px;
+    background: #737373;
+}
+
+#direct_box {
+    width: 200px;
+    padding: 0;
+}
+
+article>a {
+    display: block;
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    font-size: 1rem;
+    background: #00c73c;
+}
+
+article>ul {
+    background: white;
+    padding: 20px 10px;
+    width: 460px;
+    height: 105px;
+}
+
+article>ul>li {
+    height: 30px;
+    cursor: pointer;
+}
+
+article>ul>li>span {
+    color: grey;
+    float: right;
+}
+
+article>ul>li:hover>a {
+    font-weight: bold;
+}
+
+article>div {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 20px 10px;
+    width: 450px;
+    height: 105px;
+}
+
+article>div>a>img {
+    height: 105px;
+    width: 143px;
+}
+
+footer {
+    height: 100px;
+    background: gainsboro;
+}
+
+#copyright {
+    float: left;
+    width: 900px;
+    height: 30px;
+    padding: 35px;
+}
+
+#footer_right {
+    width: 230px;
+    height: 100px;
+    float: right;
+}
+
+.sns {
+    width: 210px;
+    height: 40px;
+    padding-right: 20px;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.sns>a>img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.family_site {
+    width: 210px;
+    height: 40px;
+    padding: 10px 20px 0 0;
+    cursor: pointer;
+}
+
+.family_site>div {
+    float: right;
+    width: 150px;
+    background: white;
+    padding: 5px;
+    border: 1px solid grey;
+}
+
+.family_site>div>span {
+    float: right;
+}
+
+.family_site>div>ul {
+    display: none
+}
+
+.family_site>div>ul>li {
+    border-top: 1px dashed #00c73c;
+    height: 20px;
+    padding: 3px;
+}
+
+#popup {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#popup_window {
+    margin: 100px auto;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    background: white;
+    border: 5px solid #00c73c;
+}
+
+.popup_title {
+    padding: 10px;
+    height: 30px;
+    background: #00c73c;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.popup_letter {
+    padding: 20px;
+    line-height: 24pt
+}
+
+#popup_window>input {
+    padding: 10px 20px;
+    background: dimgrey;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#popup_window>input:active {
+    background: black;
+}

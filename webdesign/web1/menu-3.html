@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            color: #242424;
+            font-size: 1rem;
+        }
+        body{
+            background: white;
+        }
+        .all_box{
+            width: 1200px;
+            height: 700px;
+            margin: 0 auto;
+        }
+        section{
+            width: 100%;
+            height: 300px;
+            background: yellowgreen;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+        }
+        .logo_box{
+            width: 200px;
+            height: 40px;
+            padding: 30px;
+        }
+
+        /* 네비 시작 */
+
+        nav{
+            float: right;
+            margin-top: -50px;
+            margin-right: 40px;
+        }
+        nav>ul{
+            text-align: center;
+            font-size: 0;
+        }
+        nav>ul>li{
+            display: inline-block;
+        }
+        nav>ul>li:hover>a{
+            background: #242424;
+            color: white;
+        }
+        nav>ul>li>a{
+            display: block;
+            width: 150px;
+            line-height: 40px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border: 2px solid #242424;
+            margin-left: -2px;
+            box-sizing: border-box;
+
+        }
+        .submenu{
+            display: none;
+            height: 200px;
+            border: 2px solid #242424;
+            border-top: none;
+            
+            margin-left: -2px;
+            box-sizing: border-box;
+
+
+        }
+        .submenu>li:hover>a{
+            background: #242424;
+            color: white;
+        }
+        .submenu>li>a{
+            display: block;
+            width: 146px;
+            line-height: 30px;
+        }
+    </style>
+    <script src="js/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+    <div class="all_box">
+        <header>
+            <div class="logo_box">
+                <img src="images/logo.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">강원천문대</a>
+                        <ul class="submenu">
+                            <li><a href="#">천문대소개</a></li>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">강원천문대</a>
+                        <ul class="submenu">
+                            <li><a href="#">천문대소개</a></li>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">강원천문대</a>
+                        <ul class="submenu">
+                            <li><a href="#">천문대소개</a></li>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">강원천문대</a>
+                        <ul class="submenu">
+                            <li><a href="#">천문대소개</a></li>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section></section>
+    </div>
+<script>
+$('nav>ul').hover(function() {
+    $(this).children('.submenu').stop().slideToggle();
+});
+</script>
+</body>
+</html>

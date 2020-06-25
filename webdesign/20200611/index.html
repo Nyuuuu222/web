@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .index_box{
+            position: relative;
+            width: 1000px;
+            height: 650px;
+        }
+        .index_left{
+            float: left;
+            width: 240px;
+            height: 100%;
+            background-color: steelblue;
+        }
+/* 로고시작 */
+        .logo_box{
+            width: 200px;
+            height: 40px;
+            padding: 20px;
+        }
+        /* 메뉴네비시작 */
+        .menu{
+            width: 200px;
+            margin: 20px;
+            border-top: 3px solid white;
+            border-left: 3px solid white;
+            border-right: 3px solid white;
+        }
+        .sub_menu{
+            display: none;
+            padding: 5px 0;
+            background: white;
+        }
+        .sub_menu>li>a{
+            display: block;
+            padding: 5px 0;
+        }
+        .menu>ul>li:hover>a{
+            background: darkslategray;
+            color: white;
+        }
+        .sub_menu>li>a:hover{
+            background: darkslategray;
+            color: white;
+        }
+
+
+        .mani_1{
+            border-bottom: 3px solid white;
+            padding: 5px 5px;
+        }
+        .mani_2{
+            border-bottom: 3px solid white;
+            padding: 5px 5px;
+        }
+        .mani_3{
+            border-bottom: 3px solid white;
+            padding: 5px 5px;
+        }
+        .mani_4{
+            border-bottom: 3px solid white;
+            padding: 5px 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="index_box">
+<!-- 왼쪽메뉴 -->
+<div class="index_left">
+    <header>
+        <!-- 로고 -->
+        <div class="logo_box"><a href="#"><img src="images/logo.png" alt="로고"></a></div>
+        <!-- 메뉴네비게이션 -->
+        <div class="menu">
+            <ul>
+                <li class="main_menu mani_1"><a href="#">이용안내</a>
+                    <ul class="sub_menu sub_1">
+                        <li><a href="#">이용방법</a></li>
+                        <li><a href="#">이용시간</a></li>
+                        <li><a href="#">이용요금</a></li>
+                    </ul>
+                </li>
+                <li class="main_menu mani_2"><a href="#">이벤트정보</a>
+                    <ul class="sub_menu sub_2">
+                        <li><a href="#">현장이벤트</a></li>
+                        <li><a href="#">온라인이벤트</a></li>
+                        <li><a href="#">이벤트예약</a></li>
+                    </ul>
+                </li>
+                <li class="main_menu mani_3"><a href="#">프로그램</a>
+                    <ul class="sub_menu sub_3">
+                        <li><a href="#">프로그램안내</a></li>
+                        <li><a href="#">온라인예약</a></li>
+                        <li><a href="#">단체예약상담</a></li>
+                    </ul>
+                </li>
+                <li class="main_menu mani_4"><a href="#">고객센터</a>
+                    <ul class="sub_menu sub_4">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">자주묻는질문</a></li>
+                        <li><a href="#">자료실</a></li>
+                    </ul>
+                </li>                
+            </ul>
+        </div>
+    </header>
+</div>
+<div class="index_right">
+
+</div>
+</div>
+
+
+<script>
+    $('.mani_1').mouseover(function(){
+        $('.sub_1').stop().slideDown(700);
+    })
+    $('.mani_1').mouseleave(function(){
+        $('.sub_1').stop().slideUp(700);
+    })
+
+    $('.mani_2').mouseover(function(){
+        $('.sub_2').stop().slideDown(700);
+    })
+    $('.mani_2').mouseleave(function(){
+        $('.sub_2').stop().slideUp(700);
+    })
+
+    $('.mani_3').mouseover(function(){
+        $('.sub_3').stop().slideDown(700);
+    })
+    $('.mani_3').mouseleave(function(){
+        $('.sub_3').stop().slideUp(700);
+    })
+    $('.mani_4').mouseover(function(){
+        $('.sub_4').stop().slideDown(700);
+    })
+    $('.mani_4').mouseleave(function(){
+        $('.sub_4').stop().slideUp(700);
+    })
+
+</script>
+</body>
+</html>

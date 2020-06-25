@@ -1,0 +1,281 @@
+@charset "UTF8";
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333333;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+body{
+    background: #ffffff;
+}
+
+#index_wrap{
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+/***-----헤더시작-----***/
+header{
+    width: 100%;
+    height: 100px;
+}
+
+.logo_box{
+    float: left;
+    width: 200px;
+    height: 40px;
+    padding: 30px;
+}
+
+nav{
+    float: right;
+    margin-right: 50px;
+    margin-top: 28px;
+    text-align: center;
+}
+nav>ul{
+    display: inline;
+    font-size: 0;
+}
+nav>ul>li{
+    display: inline-block;
+    background: dimgrey;
+}
+nav>ul>li>a{
+    display: block;
+    width: 180px;
+    height: 40px;
+    line-height: 2.6rem;
+    font-size: 1.2rem;
+    color: white;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    height: 150px;
+    padding: 15px 0;
+    background: rgba(255,255,255,0.9)
+}
+.submenu>li{
+    width: 180px;
+    height: 20px;
+    padding: 5px 0;
+}
+.submenu>li>a{
+    display: block;
+}
+nav>ul>li:hover>a{
+    background: grey;
+}
+.submenu>li:hover{
+    background: rgba(0,118,190,0.2);
+}
+.submenu>li:hover>a{
+    color: #0076BE;
+    text-decoration: underline;
+}
+/***-----헤더끝-----***/
+
+/***-----슬라이드시작-----***/
+#slide{
+    width: 1200px;
+    height: 298px;
+    overflow: hidden;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+}
+#slide_img_wrap{
+    width: 3600px;
+    height: 300px;
+    font-size: 0;
+}
+/***-----슬라이드끝-----***/
+
+/***-----컨텐츠시작-----***/
+#contents{
+    width: 1200px;
+    height: 200px;
+    background: rgba(0,0,0,0.1);
+}
+/*-----------탭메뉴시작-----------*/
+#tab_menu{
+    float: left;
+    width: 560px;
+    height: 180px;
+    padding: 10px;
+}
+#tab_menu>ul{
+    font-size: 0;
+}
+#tab_menu>ul>li{
+    display: inline-block;
+}
+#tab_menu>ul>li>a{
+    display: block;
+    height: 18px;
+    padding: 8px 20px;
+    background: silver;
+}
+#tab_menu>ul>li:first-child>a{
+    color: #E66B27;
+    text-decoration: underline;
+    background: white;
+}
+.tab_page{
+    position: relative;
+    width: 540px;
+    height: 125px;
+    padding: 10px;
+    background: white;
+}
+
+.notice{
+    display: contents;
+    position: absolute;
+    padding: 0 10px;
+}
+.notice>ul>li{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.notice>ul>li>a{
+    float: left;
+    color: grey;
+}
+.notice>ul>li>span{
+    float: right;
+    color: grey;
+}
+.notice>ul>li:hover>a{
+    text-decoration: underline;
+}
+
+.gallery{
+    display: none;
+    position: absolute;
+    top: 10px;
+}
+.gallery>ul{
+    width: 540px;
+    display: flex;
+    justify-content: space-between;
+}
+.gallery>ul>li{
+    display: inline-block;
+    overflow: hidden;
+    background: black;
+    width: 175px;
+    height: 125px;
+}
+.gallery>ul>li>a>img{
+    width: 175px;
+    height: 125px;
+}
+.gallery>ul>li:hover>a>img{
+    opacity: 0.7;
+    transform: scale(1.2);
+}
+/*-----------탭메뉴끝-----------*/
+
+.banner{
+    float: left;
+    width: 360px;
+    height: 180px;
+    padding: 10px;
+    }
+.banner img{
+    height: 180px;
+}
+.direct{
+    float: right;
+    width: 220px;
+    height: 180px;
+    padding: 10px;
+}
+.direct img{
+    height: 180px;
+}
+    
+/***-----컨텐츠끝-----***/
+
+/***-----푸터시작-----***/
+footer{
+    width: 1200px;
+    height: 100px;
+    background: dimgrey;
+}
+.logo_bottom{
+    float: left;
+    width: 200px;
+    height: 40px;
+    padding: 30px;
+}
+.footer_right{
+    float: right;
+    width: 940px;
+    height: 100px;
+}
+.bottom_menu{
+    height: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.bottom_menu>ul>li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.bottom_menu>ul>li>a{
+    color: silver;
+}
+.bottom_menu>ul>li:hover>a{
+    color: white;
+}
+
+.copyright{
+    height: 20px;
+    padding: 15px;
+    color: silver;
+    text-align: center;
+}
+/***-----푸터끝-----***/
+
+/***-----팝업시작-----***/
+#popup{
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 280px;
+    border: 5px solid #E66B27;
+    background: white;
+    top: 150px;
+    left: 700px;
+    z-index: 3;
+}
+.popup_title{
+    height: 30px;
+    color: white;
+    font-size: 16pt;
+    padding: 5px;
+    background: #E66B27;
+}
+.popup_text{
+    padding: 10px;
+    height: 180px;
+    line-height: 30px;
+}
+.팝업닫기{
+    float: right;
+    padding: 3px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/***-----팝업끝-----***/
+

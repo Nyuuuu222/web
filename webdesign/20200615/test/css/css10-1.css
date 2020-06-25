@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 12pt;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#all_box{
+    width: 1000px;
+    height: 650px;
+}
+
+
+
+
+/* 왼쪽박스 start */
+#left_box{
+    float: left;
+    width: 240px;
+    height: 100%;
+    background-color: white;
+}
+
+.logo_box img{
+    width: 200px;
+    height: 40px;
+    margin: 20px;
+}
+
+/* 네비 start */
+.navi_box{
+    width: 200px;
+    text-align: center;
+    margin: 20px;
+    background: white;
+    border: 1px solid silver;
+    border-bottom: none;
+
+}
+.navi_box>ul>li>a{
+    display: block;
+    height: 36px;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    line-height: 30pt;
+    border-bottom: 1px solid silver;
+}
+
+.submenu{
+    /* display: none; */
+    width: 200px;
+    height: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid silver;
+}
+
+.submenu>li>a{
+    display: block;
+    height: 30px;
+    line-height: 25pt;
+    letter-spacing: 2px;
+    color: dimgray;
+}
+
+.navi_box>ul>li:hover>a{
+    background-color: rgb(240, 183, 197);
+    color: white;
+}
+
+.submenu>li:hover>a{
+    color: white;
+    background-color: rgb(212, 199, 173);
+}
+
+/* 네비 end */
+/* 왼쪽박스 end */
+
+/* 오른쪽박스 start */
+#right_box{
+    float: right;
+    width: 760px;
+    height: 100%;
+}
+
+/* 슬라이드 start */
+.slide_wrap{
+    width: 100%;
+    height: 350px;
+}
+.slide_box{
+    position: relative;
+}
+
+.slide_box img{
+    position: absolute;
+}
+
+/* 슬라이드 end */
+/* 컨텐츠 start */
+.contents_box{
+    width: 100%;
+    height: 200px;
+}
+
+.notice{
+    float: left;
+    width: 250px;
+    height: 180px;
+    padding: 10px;
+    background: cadetblue;
+}
+
+.notice_title>a{
+    display: block;
+    width: 70px;
+    height: 18px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background: yellowgreen;
+}
+
+.notice_list{
+    width: 230px;
+    height: 130px;
+    padding: 10px;
+    background: white;
+}
+.notice_list>ul>li>a{
+    float: left;
+    font-size: 0.8rem;
+    line-height: 33px;
+    color: gray;
+}
+.notice_list>ul>li>span{
+    float: right;
+    font-size: 0.8rem;
+    line-height: 33px;
+    color: #242424;
+}
+
+.notice_list>ul>li:hover>a{
+    color: #242424;
+    font-weight: bold;
+}
+
+.gallery{
+    float: left;
+    width: 250px;
+    height: 180px;
+    padding: 10px;
+    background: palegoldenrod;
+}
+
+.gallery_title>a{
+    display: block;
+    width: 70px;
+    height: 18px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background: rgb(38, 167, 68);
+}
+
+.gallery_list{
+    width: 230px;
+    height: 74px;
+    padding: 38px 10px;
+    background: white;
+
+}
+.gallery_list>ul{
+    display: flex;
+    justify-content: space-between;
+}
+.gallery_list>ul>li{
+    overflow: hidden;
+    height: 72px;
+}

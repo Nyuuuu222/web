@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        }
+
+        li{
+        list-style: none;
+        }
+        a{
+        text-decoration: none;
+        color: inherit;
+        }
+        img{
+            margin: 0;
+            padding: 0;
+        }
+
+        .all{
+        width: 1200px;
+        margin: 0 auto;
+        }
+
+
+        .slide_wrapper_right {
+        clear: both;
+        position: relative;
+        height: 300px; 
+        overflow: hidden; 
+        } 
+        .slide_box_right {
+        position: absolute; 
+        width: 3600px; 
+        height: 300px; 
+        transition: 1s; 
+         } 
+        .slide_box_right>li { 
+        float: left; 
+        }
+
+
+        .slide_wrapper_up {
+        clear: both;
+        position: relative;
+        height: 300px; 
+        overflow: hidden; 
+        } 
+        .slide_box_up {
+        position: absolute; 
+        width: 1200px; 
+        height: 900px; 
+        transition: 1s; 
+        } 
+        .slide_box_up>li { 
+        float: left; 
+        }
+
+        .slide_wrapper_down {
+        clear: both;
+        position: relative;
+        width: 1200px; 
+        height: 300px; 
+        overflow: hidden; 
+        
+        } 
+
+        .slide_box_down{
+        margin-top: -600px;
+        overflow: hidden; 
+    }
+
+        .slide_box_down>li>img{
+        display: block;
+        width: 1200px; 
+        height: 300px; 
+        transition: 1s; 
+        
+        } 
+
+
+
+
+        .slide_box_fade{
+             position: relative; 
+             height:300px; 
+            }
+            
+        .slide_box_fade>a{ 
+            position: absolute;
+            width: 1200px; 
+            height: 300px; 
+        }
+
+
+
+
+
+    </style>
+</head>
+
+
+<body>
+    <div class="all">
+
+
+        <div class="slide_wrapper_right">
+            <ul class="slide_box_right">
+                <li><img src="images/img1.png" alt="슬라이드1"></li>
+                <li><img src="images/img2.png" alt="슬라이드2"></li>
+                <li><img src="images/img3.png" alt="슬라이드3"></li>
+            </ul>
+        </div>
+
+        <div class="slide_wrapper_up">
+            <ul class="slide_box_up">
+                <li><img src="images/img1.png" alt="슬라이드1"></li>
+                <li><img src="images/img2.png" alt="슬라이드2"></li>
+                <li><img src="images/img3.png" alt="슬라이드3"></li>
+            </ul>
+        </div>
+
+        <div class="slide_wrapper_down">
+            <div class="slide_box_down">
+                <ul>
+                    <li><img src="images/img1.png" alt="슬라이드1"></li>
+                    <li><img src="images/img2.png" alt="슬라이드2"></li>
+                    <li><img src="images/img3.png" alt="슬라이드3"></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="slide_box_fade">
+            <a href="#"><img src="images/img1.png" alt="슬라이드1"></a>
+            <a href="#"><img src="images/img2.png" alt="슬라이드2"></a>
+            <a href="#"><img src="images/img3.png" alt="슬라이드3"></a>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+    setInterval(function() {
+        $(".slide_box_right").delay("2500");
+        $(".slide_box_right").animate({
+            marginLeft: "-1200px"
+        }, "700");
+        $(".slide_box_right").delay("2500");
+        $(".slide_box_right").animate({
+            marginLeft: "-2400px"
+        }, "700");
+        $(".slide_box_right").delay("2500");
+        $(".slide_box_right").animate({
+            marginLeft: "-1200px"
+        }, "700");
+        $(".slide_box_right").delay("2500");
+        $(".slide_box_right").animate({
+            marginLeft: "0"
+        }, "700");
+    });
+
+    setInterval(function() {
+        $(".slide_box_up").delay("2500");
+        $(".slide_box_up").animate({
+            marginTop: "-316px"
+        }, "700");
+        $(".slide_box_up").delay("2500");
+        $(".slide_box_up").animate({
+            marginTop: "-616px"
+        }, "700");
+        $(".slide_box_up").delay("2500");
+        $(".slide_box_up").animate({
+            marginTop: "0"
+        }, "700");
+
+    });
+
+    setInterval(function() {
+        
+        
+        $(".slide_box_down>ul").delay("2500");
+        $(".slide_box_down>ul").animate({
+            marginTop: "300px"
+        }, "700");
+        $(".slide_box_down>ul").delay("2500");
+        $(".slide_box_down>ul").animate({
+            marginTop: "600px"
+        }, "700");
+        $(".slide_box_down>ul").delay("2500");
+        $(".slide_box_down>ul").animate({
+            marginTop: "0"
+        }, "700");
+
+    });
+
+
+        
+        
+        
+        
+$(document).ready(function(){
+
+             var interval;
+
+  var curIndex = 0; //배너의 순서(배열)를 정하기 위한 초기화 변수(배열은 0부터 시작함)
+
+  var imgCnt = 0; //배너의 전체 개수를 저장할 변수지정
+
+
+
+  imgCnt = $(".slide_box_fade img").length; //이렇게 하면 배너 전체 개수를 가져온다.
+
+  $(".slide_box_fade img").eq(curIndex).css("opacity", 1).css("z-index", 2); //처음에 나올 배너 설정
+
+
+
+
+
+  function goChange(){
+
+   var preIndex; // fadeOut될 배너 배열번호지정 변수
+
+   var nextIndex; //fadeIn될 배너 배열번호지정 변수
+
+   preIndex = curIndex;
+
+   ++curIndex;
+
+   if(curIndex == imgCnt){
+
+    curIndex = nextIndex = 0;
+
+   }else{
+
+    nextIndex = curIndex;
+
+   }
+
+
+
+   $(".slide_box_fade img").eq(preIndex).css("z-index", 1).stop().animate({"opacity" : 0}, 500, function(){ $(this).css("z-index", 0) });
+
+   $(".slide_box_fade img").eq(nextIndex).css("z-index", 2).stop().animate({"opacity" : 1}, 500, function(){});
+
+
+
+  }
+
+
+
+  interval = setInterval(goChange, 2000); //2초마다 goChange 함수를 실행한다.
+
+
+
+ });
+
+
+    </script>
+</body>
+</html>

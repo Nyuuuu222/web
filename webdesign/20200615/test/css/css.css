@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    color: #222328;
+}
+li{
+   list-style: none; 
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    background: #5c54d4;
+}
+
+.navi{
+    margin-top: 30px;
+}
+
+.menu{
+
+
+    margin-top: 27px;
+    margin-right: 20px;
+}
+
+.mainNav{
+    display: flex;
+    margin-top: 30px;
+
+
+}
+
+.mainNav li{
+    text-align: center;
+    border: solid 1px black;
+    padding: 5px;
+    width: 100px;
+
+}
+.mainNav li:hover{
+
+    background-color: white;
+}
+.subNav{
+    display: none;
+    position: relative;
+    border: 1px solid black;
+    background-color: white;
+    z-index: 999999999;
+    height: 100px!important;
+
+
+
+    
+}
+
+.subNav li{
+    text-align: center;
+    width: 100px;
+    padding-right: 11px;
+
+}
+
+.subNav li:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.slide-wrap{
+    width: 1200px;
+    overflow: hidden;
+    height: 300px;
+}
+
+.slide-all{
+    overflow: hidden;
+    z-index: 1;
+}
+
+.contents{
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    background-color: khaki;
+}
+
+.tab-menu{
+    width: 380px;
+
+    padding: 10px 10px;
+}
+.tab-menu ul{
+    display: flex;
+}
+.tab-menu ul li{
+    /* border: 1px solid black; */
+    background-color: white;
+    padding: 5px 10px;
+    text-align: center;
+    width: 70px;
+}
+
+.content{
+    /* border: 1px solid black; */
+    height: 137px;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.tab .tab2{
+    background-color: #cccccc;
+}
+.gallery{ 
+    /* border: 1px solid black; */
+    display: none;
+    height: 137px;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+
+
+.popup{
+    display: none;
+    width: 500px;
+    height: 700px;
+    background-color: white;
+    position: fixed;
+    margin-top: -300px;
+    margin-left: 0px;
+    border: 2px solid black;
+    text-align: center;
+    padding-top: 20px;
+    line-height: 50px;
+}
+
+.pop-btn{
+
+}
+
+
+.banner{
+    width: 400px;
+    padding: 10px 10px;
+}
+
+.go{
+    width: 400px;
+    padding: 10px 10px;
+}
+
+
+footer{
+    width: 1200px;
+    height: 100px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+/* .footer-logo{
+    filter: grayscale(150%);
+} */
+.text p{
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+}
+.sns img{
+    width: 40px;
+    padding: 4px;
+}
+
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            color: #242424;
+            font-size: 1rem;
+        }
+        body{
+            background: white;
+        }
+
+        .all_box{
+            width: 1000px;
+            height: 650px;
+            display: flex;
+
+        }
+        .right_box{
+            width: 760px;
+            height: 650px;
+            background: yellow;
+        }
+
+        header{
+            width: 240px;
+            height: auto;
+        }
+        .logo_box{
+            width: 200px;
+            height: 40px;
+            margin: 20px;
+
+        }
+
+        /* 네비 시작 */
+        nav{
+            width: 200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        nav>ul{
+            font-size: 0;
+
+
+        }
+        nav>ul>li{
+            
+        }
+        nav>ul>li>a{
+            padding: 5px 0;
+            display: block;
+            width: 200px;
+            line-height: 40px;
+            border: 2px solid darkblue;
+            margin-bottom: -2px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: darkblue;
+            transition: all 1s;
+
+            
+        }
+
+        nav>ul>li:hover>a{
+            background: darkblue;
+            color: white;
+            transition: all 1s;
+        }
+        .submenu{
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 220px;
+            background: darkblue;
+            height: 250px;
+            border: 2px solid darkblue;            
+        }
+        .submenu>li:hover>a{
+            background: white;
+            color: darkblue;
+            transition: all 1s;
+
+
+        }
+        .submenu>li>a{
+            display: block;
+            width: 220px;
+            line-height: 40px;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 1s;
+        }
+        
+    </style>
+    <script src="js/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+<div class="all_box">
+    <div class="left_box">
+        <header>
+            <div class="logo_box">
+                <img src="images/logo.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li class="main"><a href="#">축제소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">예약하기</a></li>
+                            <li><a href="#">핵사장 안냉</a></li>
+                            <li><a href="#">조직위워횐</a></li>
+                        </ul>
+                    </li>
+                    <li class="main"><a href="#">축제소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">예약하기</a></li>
+                            <li><a href="#">핵사장 안냉</a></li>
+                            <li><a href="#">조직위워횐</a></li>
+                        </ul>
+                    </li>
+                    <li class="main"><a href="#">축제소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">예약하기</a></li>
+                            <li><a href="#">핵사장 안냉</a></li>
+                            <li><a href="#">조직위워횐</a></li>
+                        </ul>
+                    </li>
+                    <li class="main"><a href="#">축제소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">예약하기</a></li>
+                            <li><a href="#">핵사장 안냉</a></li>
+                            <li><a href="#">조직위워횐</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="right_box">
+
+    </div>
+</div>
+
+<script>
+
+    // 페이드인
+// $('nav>ul>li').mouseenter(function(){
+//     $(this).children('.submenu').fadeIn()
+// })
+// $('nav>ul>li').mouseleave(function(){
+//     $(this).children('.submenu').fadeOut()
+// })
+
+    // 왼쪽에서 나오는거
+// $('.main').mouseenter(function(){
+//     $(this).children('.submenu').animate({width:"show"},500,"linear")
+// })
+// $('.main').mouseleave(function(){
+//     $(this).children('.submenu').fadeOut('fast')
+// })
+
+
+$('.main').mouseenter(function(){
+    $(this).children('.submenu').animate({width:"show"},300);
+});
+$('.main').mouseleave(function(){
+    $(this).children('.submenu').fadeOut('fast')
+})
+
+
+</script>
+</body>
+</html>
