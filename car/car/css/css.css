@@ -250,7 +250,17 @@
 
      box-sizing: border-box;
 }
+.modal_box{
 
+}
+.modal_img{
+
+}
+.modal_txt{
+    margin-left: 12.7%;
+    width: 448px;
+    border: 10px solid #242424;
+}
 
 
 
