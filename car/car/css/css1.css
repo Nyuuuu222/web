@@ -223,13 +223,12 @@
 
 /* section03 start */
 .section03{
-    background: white;
     font-family: 'KBIZHanmaumMyungjo';
     width: 100%;
     height: 100vh;
+    overflow: hidden;
+
 }
-
-
 .sec03_row1{
     margin-top: 2%;
 }
@@ -242,13 +241,24 @@
     font-weight: 600;
     color: rgb(151, 151, 151);
 }
-.imgimg{
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    border-style:none;
+.sec03_main>img{
+    /* border: 1px solid #242424; */
+    border-radius: 20%;
+}
+.sec03_bottom{
+    margin-top: -2.9%;
+    background: #242424;
+    z-index: 99999999;
+    border-radius: 20%;
+}
 
-     box-sizing: border-box;
+.sec03_bottom>.row>.col-sm-3{
+    margin: 0;
+    padding: 0;
+}
+.sec03_bottom img{
+    border: 10px #242424 solid;
+    border-radius: 20%;
 }
 
 
@@ -285,171 +295,3 @@
 
 
 
-
-
-
-/* .sec03_row2{
-    margin-top: 2%;
-    background: url('../img/model_sonata_dn8_design_inspiration_full_option_front_side_nocturne_grey.webp');
-    width: 100%;
-    height: 600px;
-    background-repeat: no-repeat;
-}
-
-.sec3_car{
-    position: relative;
-    margin: 0 auto;
-} */
-
-
-.point .bg{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 171, 107, 0.12);
-    -webkit-border-radious: 50%;
-    border-radius: 50%;
-    animation: record-lg 1.5s ease-in-out infinite;
-}
-.point .dot{
-
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-    width: 12px;
-    height: 12px;
-    margin-top: -6px;
-    margin-left: -6px;
-    background-color: #007fa8;
-    border: 1px solid #99cada;
-    box-shadow: 0 0 5px #fff;
-    border-radius: 50%;
-    animation: dot-effec 1.5s ease-in-out infinite;
-
-}
-@keyframes dot-effec {
-
-
-    0% {
-        opacity:  0;
-        transform: scale(.5);
-    }
-    50%{
-        opacity: 1;
-        transform: scale(1);
-    }
-    100%{
-        opacity: 0;
-        transform: scale(1);
-    }
-    }
-    
-    @keyframes record-lg {
-    
-    
-        0% {
-            opacity:  .5;
-            transform: scale(.5);
-        }
-        50%{
-            opacity: 1;
-            transform: scale(1);
-        }
-        100%{
-            opacity: .5;
-            transform: scale(1);
-        }
-        }
-    
-    .point.point-1{
-        top: 36.3%;
-        left: 59.5%;
-    }
-    
-    .point.point-2{
-        top: 58.5%;
-        left: 49.3%;
-    }
-    
-    .point.point-3{
-        top: 53.3%;
-        left: 57%;
-    }
-    
-    .point.point-4{
-        top: 41%;
-        left: 65.1%;
-    }
-    
-    .point{
-        position: absolute;
-        width: 32px;
-        height: 32px;
-    }
-    
-   
-    .introduction{
-        padding-top: 100px;
-    }
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width:800px){
-    .tab-car-img img{
-        width: 100%;
-    }
-}
-
-@media(max-width:768px){
-
-    .main_img{
-         padding-top: 80px;
-         height: 58vh;
-    }
-    .main_letter1{
-        font-size: 30px;
-    }
-    .main_letter2{
-        font-size: 28px;
-    }
-    .main_letter3{
-        display: none;
-    }
-    .main_letter3_none{
-        display: block;
-        font-size: 17px;
-    }
-    .tab-car-img img{
-        width: 100%;
-    }
-    .color-main-txt h1{
-        margin-top: 50%;
-    }
-    .tab-car-color-text a{
-        display: block;
-        width: 25px;
-        height: 25px;
-    }
-    .sec02_txt{
-        margin-top: -20%!important;
-    }
-
-}
