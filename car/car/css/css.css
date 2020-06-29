@@ -250,15 +250,28 @@
 
      box-sizing: border-box;
 }
+
+.sec03_nav_box{
+    margin:5% 20%;
+}
+.exterior_btn a{
+    font-weight: 800;
+    font-family: 'KBIZHanmaumMyungjo';
+}
+
+.interior_btn a{
+    font-weight: 800;
+    font-family: 'KBIZHanmaumMyungjo';
+}
 .tab-content{
     margin-top: 2%;
 }
-.modal_box{
-    z-index: 9999;
-}
 
+.modal_box{
+    margin: 0 auto;
+    width: 448px;
+}
 .modal_txt{
-    margin-left: 12.7%;
     width: 448px;
     /* border: 10px solid #242424; */
     background: #242424;
@@ -271,6 +284,40 @@
 .modal_txt p{
     font-size: 16px;
 }
+
+
+
+/* modal tab modified*/
+.nav{
+    width: 100%;
+}
+.nav>li{
+    width: 50%;
+}
+.nav>li>a {
+    width: 100%;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 4px 4px 0px 0px;
+    font-size: 25px;
+    padding: 10px 15px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    font-size: 25px;
+}
+
+/* modal tab end */
 
 
 .point .bg{
@@ -291,10 +338,10 @@
     top: 50%;
     left: 50%;
     z-index: 2;
-    width: 12px;
-    height: 12px;
-    margin-top: -6px;
-    margin-left: -6px;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    margin-left: -8px;
     background-color: #007fa8;
     border: 1px solid #99cada;
     box-shadow: 0 0 5px #fff;
@@ -337,8 +384,8 @@
         }
     
     .point.point-1{
-        top: 36.3%;
-        left: 59.5%;
+        top: 35.3%;
+        left: 63.5%;
     }
     
     .point.point-2{
@@ -348,28 +395,28 @@
     
     .point.point-3{
         top: 53.3%;
-        left: 57%;
+        left: 62%;
     }
     
     .point.point-4{
         top: 41%;
-        left: 65.1%;
+        left: 75.1%;
     }
     .point.point-5{
         top: 36%;
-        left: 43%;
+        left: 38%;
     }
     .point.point-6{
         top: 48%;
-        left: 41.7%;
+        left: 35.7%;
     }
     .point.point-7{
         top: 70%;
-        left: 47.3%;
+        left: 46.3%;
     }
     .point.point-8{
-        top: 50%;
-        left: 57.1%;
+        top: 49.2%;
+        left: 61.1%;
     }
 
     
@@ -439,5 +486,51 @@
     .sec02_txt{
         margin-top: -20%!important;
     }
+
+/* sectione02 end */
+
+/* section03 start */
+
+.sec03_nav_box{
+    width: 90%;
+    margin: 18% auto 0;
+}
+    /* modal tab modified*/
+.nav{
+    width: 100%;
+}
+.nav>li{
+    width: 50%;
+}
+.nav>li>a {
+    width: 100%;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 4px 4px 0px 0px;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    font-size: 16px;
+}
+
+/* modal tab end */
+.sec03_row1 h1{
+    font-size: 24px;
+}
+.sec03_row1 p{
+    font-size: 16px;
+}
 
 }
