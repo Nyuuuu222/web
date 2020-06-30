@@ -295,7 +295,7 @@
 }
 
 .sp-grab {
-    cursor: url(images/openhand.cur), move
+    cursor: pointer;
 }
 
 .sp-grabbing {

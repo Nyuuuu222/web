@@ -473,21 +473,25 @@
     left: 34.45%;
 }
 .point.point-10{
-    top: 48%;
-    left: 35.7%;
+    top: 85.2%;
+    left: 35.8%;
 }
 .point.point-11{
-    top: 70%;
-    left: 46.3%;
+    top: 32.5%;
+    left: 63.7%;
 }
 .point.point-12{
-    top: 49.2%;
-    left: 61.1%;
+    top: 38%;
+    left: 76%;
 }
 .owl-carousel{
     background-color: white;
     
 }
+.owl-theme img{
+    cursor: pointer;
+}
+
 
 
 /* section 04 end */
@@ -503,12 +507,13 @@
     font-weight: 800;
     font-size: 36px;
     letter-spacing: 15px;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 .sec05_main_txt p{
     font-size: 20px;
     font-weight: 600;
     color: rgb(151, 151, 151);
+    margin-bottom: 3%;
 }
 .sp-thumbnail-title{
     text-align: center;

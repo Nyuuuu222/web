@@ -127,3 +127,10 @@ $(document).ready(function(){
 		}
 	})
 })
+
+
+// tooltip
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+  });
