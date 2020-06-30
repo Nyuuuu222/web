@@ -77,4 +77,53 @@ $(function(){
 
 
 
-// modal
+// slide
+$( document ).ready(function( $ ) {
+    $( '#example1' ).sliderPro({
+        width: 960,
+        height: 500,
+        arrows: true,
+        buttons: false,
+        waitForLayers: true,
+        thumbnailWidth: 200,
+        thumbnailHeight: 100,
+        thumbnailPointer: true,
+        autoplay: false,
+        autoScaleLayers: false,
+        breakpoints: {
+            500: {
+                thumbnailWidth: 120,
+                thumbnailHeight: 50
+            }
+        }
+    });
+});
+
+
+
+
+// aos
+AOS.init();
+
+
+// owl carousel
+$(document).ready(function(){
+	var owl = $('.owl-carousel');
+
+	owl.owlCarousel({
+		margin:10,
+		nav:true,
+		loop:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:3
+			},
+			1000:{
+				items:5
+			}
+		}
+	})
+})
