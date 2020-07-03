@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: inherit;
+            list-style: none;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ul>
+
+    <button onclick="setColor();">Click</button>
+
+
+    <script type="text/javascript">
+
+        // var abc=document.querySelector("li");
+        // abc.style.color="red";
+        // abc.innerHTML="나는";   //first를 나는으로 바꿈. 하나만 바꿈.
+
+
+        // setColor(); //함수실행!
+        function setColor(){
+            var li=document.querySelectorAll("li");
+
+            for(var i=0; i<li.length; i++){
+                li[i].style.color="green";
+                li[i].style.backgroundColor="pink";
+            }
+        }
+
+    </script>
+</body>
+</html>

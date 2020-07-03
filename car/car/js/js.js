@@ -134,3 +134,16 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
   });
+
+// exterior interior button
+$('.exterior_btn').click(function(){
+    $('.exterior_btn a').css("background","#337ab7").css("color","white")
+    $('.interior_btn a').css("background","white").css("color","#555")
+    
+})
+
+$('.interior_btn').click(function(){
+    $('.interior_btn a').css("background","#337ab7").css("color","white")
+    $('.exterior_btn a').css("background","white").css("color","#555")
+})
+
