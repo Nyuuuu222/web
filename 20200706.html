@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <h1>XMLHttpRequest 객체의 생성</h1>
+    <button type="button" onclick="sendRequest()">Ajax 요청 보내기!</button>
+    <p id="text">dd</p>
+
+    <script type="text/javascript">
+        function sendRequest(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("text").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET","index.html",true);
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>

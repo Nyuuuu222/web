@@ -21,6 +21,7 @@
 #example1 .sp-thumbnail-description {
 	font-size: 14px;
 	color: #333;
+	text-align: center;
 }
 
 @media (max-width: 860px) {
@@ -51,6 +52,7 @@
 
 	#example1 .sp-thumbnail-description {
 		display: none;
+		text-align: center;
 	}
 }
 
@@ -118,11 +120,15 @@
 	margin-bottom: 5px;
 	text-transform: uppercase;
 	color: #333;
+	font-size: 16px;
+	/* font-weight: 600; */
 }
 
 #example5 .sp-thumbnail-description {
-	font-size: 14px;
-	color: #333;
+	font-size: 13px;
+    color: rgb(151, 151, 151);
+
+	text-align: center;
 }
 
 @media (max-width: 500px) {
