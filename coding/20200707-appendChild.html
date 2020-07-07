@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <h1>appendChild() 메소드</h1>
+    <h2 id="item">JabaScript</h2>
+    <div id="list">
+        <p>hTML</p>
+        <p>CSS</p>
+        <p>JQuery</p>
+    </div>
+    <button onclick="appendNode()">노트 추가!</button>
+
+
+
+    <script>
+        function appendNode(){
+            var parent = document.getElementById("list");
+            // 아이디가 "list"인 요소를 선택함.
+            var newItem = document.getElementById("item");
+            // 아이디가 "item"인 요소를 선택함.
+            parent.appendChild(newItem);
+            // 해당 요소의 맨 마지막 자식 노드로 추가함.
+        }
+    </script>
+</body>
+</html>
