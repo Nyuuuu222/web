@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+        .carbox{
+            border-radius: 5px;
+            border: 5px solid silver;
+            height: 500px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            width: 80%;
+        }
+        .carbox .car{
+            background-repeat: no-repeat;
+            background-position: bottom;
+            bottom: 100%;
+            height: 150px;
+            position: absolute;
+            width: 220px;
+        }
+        .carbox .car.num1{
+            background: url('img/KakaoTalk_20200708_095925959.gif');
+        }
+        .carbox .car.num2{
+            background: url('img/KakaoTalk_20200708_095926030.gif');
+        }
+    </style>
+</head>
+<body>
+    <div class="carbox"></div>
+    <div style="text-align: center; margin-top: 10px;">
+        <button type="button" onclick="go()">출동</button>
+    </div>
+
+    <script>
+        function go(){
+
+        var el = $('<div class="car num' + Math.ceil(Math.random() * 2) + '"></div>').appendTo('.carbox');
+
+        var rnd1 = Math.round(Math.random() * 20);
+
+        el.animate({'bottom':0}, {
+            duration : 2000,
+            easing : 'easeOutBounce',
+            queue : false
+        });
+
+        el.animate({'left':rnd1 + '%'}, {
+            duration : 2000,
+            easing : 'easeOutQuad',
+            complete : function(){
+                el.animate({'left':'100%'}, 2000, 'easeInQuart', function(){
+                    el.remove();
+                });
+            }
+        });
+
+        }
+    </script>
+</body>
+</html>

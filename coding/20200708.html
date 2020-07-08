@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <h1>주기적으로 Ajax 요청하기</h1>
+    <p id="text">새로운 단락을 생성하여 이 단락 앞에 추가할 것입니다.</p>
+    <button onclick="createNode()">요소 노드 생성!</button>
+
+
+
+    <script>
+        function sendRequest() {
+
+        var httpRequest = new XMLHttpRequest();
+
+        httpRequest.onreadystatechange = function() {
+
+            if (httpRequest.readyState == XMLHttpRequest.DONE && httpRequest.status == 200 ) {
+
+                document.getElementById("text").innerHTML = httpRequest.responseText;
+
+            }
+
+        };
+
+        httpRequest.open("GET", "/examples/media/ajax_periodic_request.php");
+
+        httpRequest.send();
+
+        }
+
+        sendRequest();
+
+        window.setInterval("sendRequest()", 500); // 매 0.5초마다 Ajax 요청을 보냄.
+    </script>
+</body>
+</html>
