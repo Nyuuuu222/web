@@ -111,6 +111,7 @@
 
 #example5 .sp-thumbnail-text {
 	width: 170px;
+	/* height: 900px!important; */
     float: right;
     padding: 8px;
     background-color: #F0F0F0;

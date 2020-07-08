@@ -1,4 +1,19 @@
 /* media */
+@media(max-width:1900px){
+    /* .sec04_main_txt{
+        padding: 1% 0;
+    }
+    .sec04_main_txt h1{
+        font-size: 50px;
+        font-weight: 900;
+        letter-spacing: 5px;
+    }
+    .sec04_main_txt>p{
+        font-size: 18px;
+        padding-bottom: 1%;
+    } */
+}
+
 @media(max-width:1700px){
     .section03 .sec_03{
         padding: 4% 0;
@@ -176,7 +191,7 @@
 /* section04 start */
 
 .sec04_main_txt{
-    padding: 30% 0;
+    padding: 15% 0;
 }
 .sec04_main_txt h1{
     font-size: 50px;
@@ -185,7 +200,7 @@
 }
 .sec04_main_txt>p{
     font-size: 18px;
-    padding-bottom: 10%;
+    padding-bottom: 2%;
 }
 
 .sec04_img{
@@ -207,7 +222,7 @@
 /* section04 end */
 /* section05 start */
 .sec05_main_txt{
-    padding-top: 30%;
+    padding-top: 30% 0;
 }
 .sec05_main_txt h1{
     color: white;
@@ -218,6 +233,24 @@
 .sec05_main_txt>p{
     font-size: 18px;
     padding-bottom: 10%;
+}
+
+
+/* section05 start */
+.sec05_main_txt{
+    padding: 35% 0;
+}
+.sec05_main_txt h1{
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.sec05_main_txt>p{
+    font-size: 18px;
+    margin-bottom: -40%!important;
+}
+#example1{
+    padding-top: -20%;
 }
 
 
@@ -244,11 +277,79 @@
     .sec03_row1 p{
         font-size: 16px;
     }
+/* section03 end */
+
+
+/* section04 start */
+.sec04_main_txt{
+    padding: 24% 0;
+}
+.sec04_main_txt h1{
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.sec04_main_txt>p{
+    font-size: 18px;
+    padding-bottom: 2%;
+}
+
+/* section04 start */
+.sec06_main_txt{
+    padding: 10% 0;
+}
+.sec06_main_txt h1{
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.sec0_main_txt>p{
+    font-size: 18px;
+    padding-bottom: 2%;
+}
+.sec06_main_txt .p2{
+    display: none;
+}
+
+}
+
+@media(max-width:480px){
+    /* section04 start */
+    .sec04_main_txt{
+        padding: 45% 0;
+    }
+    .sec04_main_txt h1{
+        font-size: 50px;
+        font-weight: 900;
+        letter-spacing: 5px;
+    }
+    .sec04_main_txt>p{
+        font-size: 18px;
+        padding-bottom: 2%;
+    }
+
+    /* section05 start */
+    .sec05_main_txt{
+        padding: 45% 0;
+    }
+    .sec05_main_txt h1{
+        font-size: 50px;
+        font-weight: 900;
+        letter-spacing: 5px;
+    }
+    .sec05_main_txt>p{
+        font-size: 18px;
+        margin-bottom: -40%!important;
+    }
+
+
 }
 
 
 
+
 @media(max-width:375px){
+    /* section01 start */
     .main_icon_txt1>.row{
         padding: 0% 0;
     }
@@ -261,4 +362,7 @@
     .main_icon_txt4>.row{
         margin: -18% 0;
     }
+    /* section01 end */
+
+
 }

@@ -495,13 +495,16 @@
     font-size: 36px;
     letter-spacing: 15px;
     font-family: 'KBIZHanmaumMyungjo';
-    margin-top: 3%;
+    margin-top: 4%;
+
 }
 .sec04_main_txt p{
     font-size: 16px;
     font-weight: 600;
     font-family: 'KBIZHanmaumMyungjo';
     color: rgb(151, 151, 151);
+    padding-bottom: 1%;
+
 }
 .sec04_img{
     position: relative;
