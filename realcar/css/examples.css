@@ -59,7 +59,8 @@
 /* Example 3 */
 
 #example3 .sp-selected-thumbnail {
-	border: 4px solid #000;
+	border: 4px solid rgb(161, 165, 204);
+	text-align: center;
 }
 
 /* Example 4 */

@@ -192,7 +192,7 @@
      height: 4px;
      width: 4px;
      border: 0;
-     background: #333;
+     background: #4B709A;
      left: 50%;
      top: 50%;
      margin: -2px 0 0 -2px;
@@ -218,7 +218,10 @@
      display: block;
      opacity: 0;
      width: 0;
-     cursor: pointer
+     cursor: pointer;
+     color: #FD9A28;
+     font-family: 'KBIZHanmaumMyungjo';
+     /* text-shadow: 2px 0 0 #337ab7, -2px 0 0 #FD9A28, 0 2px 0 #FD9A28, 0 -2px 0 #FD9A28, 1px 1px #FD9A28, -1px -1px 0 #FD9A28, 1px -1px 0 #FD9A28, -1px 1px 0 #FD9A28; */
  }
  
  #fp-nav ul li:hover .fp-tooltip,
