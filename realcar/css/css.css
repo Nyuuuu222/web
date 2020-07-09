@@ -6,7 +6,7 @@
 .logo_box{
     position: fixed;
     z-index: 999;
-    top: 2%;
+    top: 3%;
     left: 1%;
 }
 .section01{
@@ -212,6 +212,7 @@
     font-weight: 700;
     font-family: 'KBIZHanmaumMyungjo';
     margin-left: -4.3%;
+    padding-left: 0;
 }
 .color-txt>li>p{
     font-family: 'KBIZHanmaumMyungjo';
@@ -726,7 +727,6 @@
     width: 100%;
     display:block;
 }
- 
 .resize {
     position: absolute;
     top:0;
@@ -735,6 +735,17 @@
     width: 50%;
     overflow: hidden;
 }
+/* .resize {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.resize img{
+    display: block;
+    width: 10%;
+} */
 
 
 .handle { /* Thin line seperator */

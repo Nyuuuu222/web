@@ -413,7 +413,98 @@
     }
 }
 
+/* Galaxy Note 9 */
+@media(max-width:414px){
+    /* section 01 start */
+    .logo_box{
+        top: 5%;
+    }
+    .sec01_con{
+        margin-left: -11% !important;
+    }
+    .sec01_row{
+        display: flex;
+        padding: 3% 10%;
+        width: 10%;
+    }
+    .sec01_row img{
+        width: 40px;
+    }
+    .main_icon_footer{
+        padding-top: 3%;
+        font-size: 12px;
+    }
+    .sec01_con>.row .row{
+        display: flex;
+    }
 
+
+
+    /* section04 start */
+    .sec04_main_txt{
+        padding-top: 34%;
+    }
+    .sec04_main_txt h1{
+        font-size: 50px;
+        font-weight: 900;
+        letter-spacing: 5px;
+    }
+    .sec04_main_txt>p{
+        font-size: 18px;
+        padding-bottom: 2%;
+    }
+
+    /* section05 start */
+    .sec05_main_txt{
+        padding-top: 34%;
+    } 
+    /* section06 start */
+    .sec06_main_txt{
+        padding: 10% 0;
+    }
+    .sec06_main_txt h1{
+        padding-top: 20%;
+        font-size: 50px;
+        font-weight: 900;
+        letter-spacing: 5px;
+    }
+    .sec6_main_txt>p{
+        font-size: 18px;
+        padding-bottom: 2%;
+    }
+/* section07 start */
+    .sec07_main_txt{
+        padding-top: 30%;
+    }
+    .sec07_main_txt>.p2{
+        padding: 5%;
+    }
+    .sec07_box{
+
+    }
+    .sec07_box img{
+
+    }
+    .ba-slider{
+        width: 100%;
+    }
+    .resize{
+        height: 150%;
+    }
+    
+    .bottom_txt{
+        text-align: center;
+        padding: 10%;
+        width: 100%;
+    }
+    .bottom_txt>h3{
+        font-size: 20px;
+    }
+    .bottom_txt>p{
+        font-size: 15px;
+    }
+
+}
 
 
 @media(max-width:375px){
@@ -434,3 +525,5 @@
 
 
 }
+
+
