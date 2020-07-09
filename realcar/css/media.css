@@ -58,6 +58,35 @@
     .tab-car-img img{
         width: 100%;
     }
+
+
+/* section06 start */
+    .sec06_main_txt{
+        padding-top: 15%!important;
+    }
+    .sec06_main_txt>h1{
+        font-size: 50px;
+        font-weight: 900;
+        letter-spacing: 5px;
+        margin-top: -13%!important;
+        
+    }
+    .sec06_main_txt>p{
+        font-size: 18px;
+        /* margin-bottom: -3%!important; */
+    }
+    .p2{
+        padding-top: 4%;
+        padding-bottom: 5%;
+        font-size: 14px!important;
+    }
+    .sp-thumbnail-container {
+        height: 120px!important;
+    }
+    #example5 .sp-thumbnail-text{
+        height: 600px!important;
+    }
+
 }
 
 @media(max-width:768px){
@@ -240,7 +269,7 @@
 .sec05_main_txt{
     padding: 35% 0;
 }
-.sec05_main_txt h1{
+.sec05_main_txt>h1{
     font-size: 50px;
     font-weight: 900;
     letter-spacing: 5px;
@@ -253,6 +282,19 @@
     padding-top: -20%;
 }
 
+/* section06 start */
+.sec06_main_txt{
+    padding-top: 30%!important;
+}
+.sec06_main_txt>h1{
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.sec06_main_txt>p{
+    font-size: 18px;
+    margin-bottom: -3%!important;
+}
 
 }
 
@@ -294,7 +336,7 @@
     padding-bottom: 2%;
 }
 
-/* section04 start */
+/* section06 start */
 .sec06_main_txt{
     padding: 10% 0;
 }

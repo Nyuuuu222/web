@@ -127,7 +127,9 @@
     height: 100vh;
     overflow: hidden;
 }
-
+.sec02_txt{
+    padding-top: 3%;
+}
 .tab-car-img img{
 }
 
@@ -225,7 +227,7 @@
 }
 .color-main-txt>h1{
     font-size: 50px;
-    font-weight: 800;
+    font-weight: 900;
     color: #333333;
     letter-spacing: 15px;
     font-family: 'KBIZHanmaumMyungjo';
@@ -257,7 +259,7 @@
     margin-top: 2%;
 }
 .section03 h1{
-    font-weight: 800;
+    font-weight: 900;
     font-size: 36px;
     letter-spacing: 3px;
     font-family: 'KBIZHanmaumMyungjo';
@@ -282,7 +284,7 @@
 }
 
 .exterior_btn a{
-    font-weight: 800;
+    font-weight: 900;
     font-family: 'KBIZHanmaumMyungjo';
     background: #337ab7;
     color: white;
@@ -294,7 +296,7 @@
 }
 
 .interior_btn a{
-    font-weight: 800;
+    font-weight: 900;
     font-family: 'KBIZHanmaumMyungjo';
     
 }
@@ -489,17 +491,17 @@
     font-family: 'KBIZHanmaumMyungjo';
 }
 .sec04_main_txt{
+    padding-top: 3%;
 }
 .sec04_main_txt h1{
-    font-weight: 800;
-    font-size: 36px;
+    font-weight: 900;
+    font-size: 50px;
     letter-spacing: 15px;
     font-family: 'KBIZHanmaumMyungjo';
-    margin-top: 4%;
 
 }
-.sec04_main_txt p{
-    font-size: 16px;
+.sec04_main_txt>p{
+    font-size: 20px;
     font-weight: 600;
     font-family: 'KBIZHanmaumMyungjo';
     color: rgb(151, 151, 151);
@@ -595,9 +597,12 @@
 .slide_box img{
 
 }
-.sec05_main_txt h1{
-    font-weight: 800;
-    font-size: 36px;
+.sec05_main_txt{
+    padding-top: 3%;
+}
+.sec05_main_txt>h1{
+    font-weight: 900;
+    font-size: 50px;
     letter-spacing: 15px;
     font-family: 'KBIZHanmaumMyungjo';
     padding-top: 3%;
@@ -626,9 +631,12 @@
     background: #f5f2f1;
     font-family: 'KBIZHanmaumMyungjo';
 }
-.sec06_main_txt h1{
-    font-weight: 800;
-    font-size: 36px;
+.sec06_main_txt{
+    padding-top: 2%;
+}
+.sec06_main_txt>h1{
+    font-weight: 900;
+    font-size: 50px;
     letter-spacing: 15px;
     font-family: 'KBIZHanmaumMyungjo';
     padding-top: 3%;
@@ -651,10 +659,24 @@
 }
 #example5{
     height: 560px;
+    margin-top: -1.5%;
 }
-
+.section06 .slider-pro{
+    /* font-family: 'KBIZHanmaumMyungjo'; */
+    
+}
 .slider-pro .sp-vertical{
     width: 1920px;
+}
+.section06 .slider-pro .sp-caption-container{
+    /* background: rgba(50, 112, 133, 0.685); */
+    background: rgb(75, 112, 154);
+    font-family: 'KBIZHanmaumMyungjo';
+    color: white;
+    font-size: 18px;
+    padding: 2%;
+
+
 }
 
 
@@ -668,19 +690,28 @@
     background: #f5f2f1;
     font-family: 'KBIZHanmaumMyungjo';
 }
+.sec07_main_txt{
+    padding-top: 1;
+}
 .sec07_main_txt h1{
-    font-weight: 800;
-    font-size: 36px;
+    font-weight: 900;
+    font-size: 50px;
     letter-spacing: 15px;
     font-family: 'KBIZHanmaumMyungjo';
     padding-top: 3%;
 }
-.sec07_main_txt p{
+.sec07_main_txt>p{
     font-size: 20px;
     font-weight: 600;
     color: rgb(151, 151, 151);
     font-family: 'KBIZHanmaumMyungjo';
     margin-bottom: 3%;
+}
+/* .p2{
+    margin-bottom: -5%!important;
+} */
+.sec07_box{
+    margin-top: -2%;
 }
 
 .ba-slider {
@@ -763,6 +794,7 @@
     margin-top: 3%;
     width: 62%;
     margin: 0 auto;
+    font-family: 'open sans';
 }
 .bottom_txt h3{
     
@@ -778,14 +810,19 @@
     background: #f5f2f1;
     font-family: 'KBIZHanmaumMyungjo';
 }
-.sec08_main_txt h1{
-    font-weight: 800;
-    font-size: 36px;
+.sec08_main_txt{
+    padding-top: 3%;
+}
+.sec08_main_txt>h1{
+    font-weight: 900;
+    font-size: 50px;
     letter-spacing: 15px;
     font-family: 'KBIZHanmaumMyungjo';
     padding-top: 3%;
 }
-
+.sec_08_vd{
+    padding-top: 2%;
+}
 .section08 .sp-mask{
     margin-bottom: -16%!important;
 }

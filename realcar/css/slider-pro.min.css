@@ -89,7 +89,8 @@
 
 .sp-thumbnail {
     border: none;
-    height: 500px!important;
+    /* height: 200px!important; */
+    /* height: 500px!important; */
 }
 
 .sp-thumbnail-container {
@@ -98,7 +99,8 @@
     overflow: hidden;
     float: left;
     -moz-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
+    /* height: 100px!important; */
 }
 
 .sp-rtl .sp-thumbnail-container {
