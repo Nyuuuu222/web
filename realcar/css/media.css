@@ -384,7 +384,33 @@
         margin-bottom: -40%!important;
     }
 
-
+    /* section06 start */
+    .sec06_main_txt{
+        padding: 10% 0;
+    }
+    .sec06_main_txt h1{
+        font-size: 50px;
+        font-weight: 900;
+        letter-spacing: 5px;
+        padding-top: 25%;
+    }
+    .sec0_main_txt>p{
+        font-size: 18px;
+        padding-bottom: 2%;
+    }
+    .sec06_main_txt .p2{
+        display: none;
+    }
+    .section06 .slider-pro .sp-caption-container{
+        font-size: 17px;
+        margin-top: 2%;
+    }
+    /* #example5 .sp-thumbnail-text{
+        height: 300px!important;
+    } */
+    #example5 .sp-thumbnail-container{
+        height: 65px !important;
+    }
 }
 
 
