@@ -657,21 +657,7 @@
     .sec01_con{
         margin-left: -11% !important;
     }
-    .sec01_row{
-        display: flex;
-        padding: 3% 10%;
-        width: 10%;
-    }
-    .sec01_row img{
-        width: 40px;
-    }
-    .main_icon_footer{
-        padding-top: 3%;
-        font-size: 12px;
-    }
-    .sec01_con>.row .row{
-        display: flex;
-    }
+    
 
 
 
