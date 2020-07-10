@@ -264,7 +264,7 @@
     font-size: 36px;
     letter-spacing: 3px;
     font-family: 'KBIZHanmaumMyungjo';
-    margin-top: 3%;
+    margin-top: 0%;
 }
 .section03 p{
     font-size: 20px;
@@ -492,7 +492,7 @@
     font-family: 'KBIZHanmaumMyungjo';
 }
 .sec04_main_txt{
-    padding-top: 3%;
+    padding-top: 1%;
 }
 .sec04_main_txt h1{
     font-weight: 900;
@@ -828,7 +828,7 @@
 .sec08_main_txt>h1{
     font-weight: 900;
     font-size: 50px;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
     font-family: 'KBIZHanmaumMyungjo';
     padding-top: 3%;
 }
