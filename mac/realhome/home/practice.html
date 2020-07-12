@@ -1,0 +1,244 @@
+<!-- 세로 스크롤 원페이지 -->
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>MouseWheel</title>
+    <style type="text/css">
+        html,body{ margin:0; padding:0; width:100%; height:100%;}
+        .box{ width:100%; height:100%; position:relative; color:#ffffff; font-size:24pt;}
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var elm = ".box";
+            $(elm).each(function (index) {
+                // 개별적으로 Wheel 이벤트 적용
+                $(this).on("mousewheel DOMMouseScroll", function (e) {
+                    e.preventDefault();
+                    var delta = 0;
+                    if (!event) event = window.event;
+                    if (event.wheelDelta) {
+                        delta = event.wheelDelta / 120;
+                        if (window.opera) delta = -delta;
+                    } 
+                    else if (event.detail)
+                        delta = -event.detail / 3;
+                    var moveTop = $(window).scrollTop();
+                    var elmSelecter = $(elm).eq(index);
+                    // 마우스휠을 위에서 아래로
+                    if (delta < 0) {
+                        if ($(elmSelecter).next() != undefined) {
+                            try{
+                                moveTop = $(elmSelecter).next().offset().top;
+                            }catch(e){}
+                        }
+                    // 마우스휠을 아래에서 위로
+                    } else {
+                        if ($(elmSelecter).prev() != undefined) {
+                            try{
+                                moveTop = $(elmSelecter).prev().offset().top;
+                            }catch(e){}
+                        }
+                    }
+                    
+                    // 화면 이동 0.8초(800)
+                    $("html,body").stop().animate({
+                        scrollTop: moveTop + 'px'
+                    }, {
+                        duration: 800, complete: function () {
+                        }
+                    });
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="box" style="background-color:red;">1</div>
+    <div class="box" style="background-color:orange;">2</div>
+    <div class="box" style="background-color:yellow;">3</div>
+    <div class="box" style="background-color:green;">4</div>
+    <div class="box" style="background-color:blue;">5</div>
+    <div class="box" style="background-color:indigo;">6</div>
+    <div class="box" style="background-color:violet;">7</div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 추가 (좌우 스크롤) -->
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>MouseWheel</title>
+    <style type="text/css">
+        html,body{ margin:0; padding:0; width:100%; height:100%;}
+        .boxwrap{ display: table; table-layout: fixed; width: 700%; height: 100%; table-layout: fixed;}
+        .box{ display: table-cell;position:relative; color:#ffffff; font-size:24pt;}
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var elm = ".box";
+            $(elm).each(function (index) {
+                // 개별적으로 Wheel 이벤트 적용
+                $(this).on("mousewheel DOMMouseScroll", function (e) {
+                    e.preventDefault();
+                    var delta = 0;
+                    if (!event) event = window.event;
+                    if (event.wheelDelta) {
+                        delta = event.wheelDelta / 120;
+                        if (window.opera) delta = -delta;
+                    } 
+                    else if (event.detail)
+                        delta = -event.detail / 3;
+                    var moveTop = $(window).scrollLeft();
+                    var elmSelecter = $(elm).eq(index);
+                    // 마우스휠을 위에서 아래로
+                    if (delta < 0) {
+                        if ($(elmSelecter).next() != undefined) {
+                            try{
+                                moveTop = $(elmSelecter).next().offset().left;
+                            }catch(e){}
+                        }
+                    // 마우스휠을 아래에서 위로
+                    } else {
+                        if ($(elmSelecter).prev() != undefined) {
+                            try{
+                                moveTop = $(elmSelecter).prev().offset().left;
+                            }catch(e){}
+                        }
+                    }
+                    
+                    // 화면 이동 0.8초(800)
+                    $("html,body").stop().animate({
+                        scrollLeft: moveTop + 'px'
+                    }, {
+                        duration: 800, complete: function () {
+                        }
+                    });
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="boxwrap">
+    <div class="box" style="background-color:red;">1</div>
+    <div class="box" style="background-color:orange;">2</div>
+    <div class="box" style="background-color:yellow;">3</div>
+    <div class="box" style="background-color:green;">4</div>
+    <div class="box" style="background-color:blue;">5</div>
+    <div class="box" style="background-color:indigo;">6</div>
+    <div class="box" style="background-color:violet;">7</div>
+    </div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 영역 스크롤시 전체 스크롤 막기 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        .inner-content-with-y-scroll,
+        iframe,
+        .obj {
+            overflow-x: hidden;
+            width: 100px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="obj" class="obj">
+        //다른 방식 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum finibus dui at tincidunt. Nam
+        rhoncus diam laoreet faucibus molestie. Curabitur facilisis tincidunt laoreet. Suspendisse lobortis eget mauris
+        quis aliquam. Nam tincidunt dolor justo, nec auctor nulla consectetur eget. Vestibulum ultricies elementum
+        fermentum. Phasellus in diam vitae lorem faucibus pulvinar. Ut sit amet molestie dolor, eget placerat nibh.
+        Etiam laoreet dignissim semper. Aliquam fringilla rhoncus quam a mollis. Proin convallis, nunc non imperdiet
+        rhoncus, orci leo feugiat lorem, ac pulvinar leo metus vitae nulla. Donec nisl enim, convallis quis urna eget,
+        tempor porttitor ligula. Mauris euismod imperdiet congue. Aliquam a efficitur justo, sed interdum ligula.
+        Suspendisse potenti. Maecenas nec placerat nunc, eu fermentum dui.
+    </div>
+
+
+    <script>
+
+        //해당 영역안에서는 스크롤을 별도로 처리하게끔 (장점: 바디 스크롤바 고정, 단점: 스크롤 가속 없음)
+        $('#obj').on('mousewheel', function (e) {
+            if (e.originalEvent.wheelDelta >= 120) {
+                this.scrollTop -= 50;
+            } else if (e.originalEvent.wheelDelta <= -120) {
+                this.scrollTop += 50;
+            }
+            return false;
+        });
+    </script>
+</body>
+
+</html> -->
