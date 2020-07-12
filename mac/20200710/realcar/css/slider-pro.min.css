@@ -179,6 +179,7 @@
 .sp-left-thumbnails.sp-has-pointer .sp-thumbnail {
     position: absolute;
     right: 18px
+    
 }
 
 .sp-left-thumbnails.sp-has-pointer .sp-selected-thumbnail:before {
@@ -467,7 +468,7 @@
     transform: rotate(270deg)
 }
 
-.sp-next-arrow:after,
+/* .sp-next-arrow:after,
 .sp-next-arrow:before,
 .sp-previous-arrow:after,
 .sp-previous-arrow:before {
@@ -476,9 +477,9 @@
     width: 50%;
     height: 50%;
     background-color: #FFF
-}
+} */
 
-.sp-arrow:before {
+/* .sp-arrow:before {
     left: 30%;
     top: 0;
     -webkit-transform: skew(145deg, 0deg);
@@ -492,7 +493,7 @@
     -webkit-transform: skew(-145deg, 0deg);
     -ms-transform: skew(-145deg, 0deg);
     transform: skew(-145deg, 0deg)
-}
+} */
 
 .sp-horizontal.sp-rtl .sp-previous-arrow,
 .sp-next-arrow {
