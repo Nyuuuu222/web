@@ -41,13 +41,45 @@
 
 
 
-
+<script>
+	// window.open("modal.html", "_self", "width=400, height=300, left=100, top=50");
+</script>
 </head>
 <body>
 <!-- 맨위로 -->
 <div class="logo" id="#topBtn"><a href="#"><span class="image blinking">
 	<img src="img/logo.png" alt="" class="logoimg"></span></a></div>
 <!-- 맨위로 끝 -->
+<!-- <div class="project_popup">
+	<div class="project_box" style="display: none;">
+		<div class="project_title">
+			<h1>Team Project</h1>
+		</div>
+		<div class="project_letter">
+			<h3>Team Nmae : Goldline</h3>
+			<h3>Members : 김은영 안선주 김종인</h3>
+			<h3>Subject : 파주출판도시 PAJU BOOKCITY</h3>
+		</div>
+		<div class="project_footer">
+			<input type="button" value="닫기" class="project_btn" onclick="self.close();">
+		</div>
+	</div>
+</div> -->
+
+<!-- loading start -->
+<div class="loading">
+	<img src="img/loading3.svg" alt="">
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.loading').show();
+	});
+	$(window).on('load', function() {
+		$('.loading').hide();
+	});
+</script>
+<!-- loading end -->
+
 
 <!-- 전체 시작 -->
 <div id="fullpage">
@@ -551,7 +583,7 @@
 			</div>
 
 
-			<p class="map_txt1">주소<br>경기도 파주시 회동길 145 아시아출판문화정보센터 <br>승용차 자유로 > 통일동산 방향<br>
+			<p class="map_txt1"><주소><br>경기도 파주시 회동길 145 아시아출판문화정보센터 <br>승용차 자유로 > 통일동산 방향<br>
 				일산대교 기점 7km 지점에 위치한 장월 IC에서 <br>파주출판도시 진입로 표지판을 보고 들어오시면 됩니다.
 				<br><br></p>
 		</div>

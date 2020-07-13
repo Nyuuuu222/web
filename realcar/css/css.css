@@ -1,6 +1,30 @@
 
 @font-face { font-family: 'KBIZHanmaumMyungjo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KBIZHanmaumMyungjo.woff') format('woff'); font-weight: normal; font-style: normal; }
+/* loading start */
+.loading {
+    display:none; 
+    position:absolute; 
+    top:-4px; 
+    left:0; 
+    z-index:99; 
+    width:100%; 
+    height:100%; 
+    background:rgba(121, 121, 121, 0.5);}
 
+.loading img {
+    display:block; 
+    position:relative; 
+    top:50%; 
+    margin:-75px auto 0 auto; 
+    /* width:200px;  */
+    /* height:50px;  */
+    padding:0 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-sizing:border-box;
+}
+/* loading end */
 
 /* logo fixed */
 .logo_box{
@@ -514,7 +538,7 @@
     width: 59.8%;
 }
 .sec04_slide1 img{
-    padding-bottom: 0.3%;
+    padding-bottom: 0.9%;
 }
 
 .point.point-9{
@@ -909,6 +933,35 @@
     width: 100%;
     margin-top: 12.6%;
     height: 300px;
+}
+.footer_logo{
+    top: 20%;
+    left: 5%;
+}
+
+.sec09_footer ul{
+    display: flex;
+}
+.sec09_footer ul li{
+    border-right: 1px solid #ccc;
+    padding: 0 2%;
+}
+.sec09_footer ul li:nth-last-child(1){
+    border-right: none;
+}
+.sec09_footer ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.footer_2{
+    padding-top: 6%;
+}
+.footer_select{
+    border: none;
+    padding: 1%;
+    margin-top: 10%;
+    margin-left: 50%;
 }
 
 
