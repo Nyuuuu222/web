@@ -1,14 +1,14 @@
-$(window).scroll(function () {
-    if($(window).scrollTop() < 100) {
-     $('.logo_main').show();
-     $('.logo_scroll').hide();
+// $(window).scroll(function () {
+//     if($(window).scrollTop() < 100) {
+//      $('.logo_main').show();
+//      $('.logo_scroll').hide();
 
-    } else {
-     $('.logo_main').hide();
-     $('.logo_scroll').show();
+//     } else {
+//      $('.logo_main').hide();
+//      $('.logo_scroll').show();
      
-    }
-   });
+//     }
+//    });
 
 
 
