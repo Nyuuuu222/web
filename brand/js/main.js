@@ -1,15 +1,23 @@
-// $(window).scroll(function () {
-//     if($(window).scrollTop() < 100) {
-//      $('.logo_main').show();
-//      $('.logo_scroll').hide();
 
-//     } else {
-//      $('.logo_main').hide();
-//      $('.logo_scroll').show();
-     
-//     }
-//    });
+// scroll logo menu
+$(window).scroll(function () {
+    if($(window).scrollTop() < 550) {
+     $('.nav').fadeOut();
+     $('.nav_none').fadeIn();
+     $('.logo').fadeOut();
+    } else {
+     $('.nav').fadeIn();
+     $('.nav_none').fadeOut();
+     $('.logo').fadeIn();
+    }
+   });
 
+// $('.logo').hover(function(){
+//     $('.logo').fadeIn(function(){
+//      $('.logo').css("top","80%")
+
+//     })
+// })
 
 
     
@@ -38,7 +46,7 @@
   }
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
-  $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
+  $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto, .nav', function(e) {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
           e.preventDefault();
           var target = $(this.hash);

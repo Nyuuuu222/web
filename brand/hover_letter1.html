@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  background: #f9f9f9;
+  font-family: "Comfortaa", sans-serif;
+}
+
+aside.context {
+  text-align: center;
+  color: #333;
+  line-height: 1.7;
+}
+aside.context a {
+  text-decoration: none;
+  color: #333;
+  padding: 3px 0;
+  border-bottom: 1px dashed;
+}
+aside.context .explanation {
+  max-width: 700px;
+  margin: 6em auto 0;
+}
+
+footer {
+  text-align: center;
+  margin: 4em auto;
+  width: 100%;
+}
+footer a {
+  text-decoration: none;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px dashed #333;
+  color: #333;
+  margin: 5px;
+}
+footer a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+footer a .icons {
+  margin-top: 12px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.main-content {
+  margin: 4em auto 0;
+  max-width: 800px;
+}
+
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 300px auto 240px auto repeat(2, 200px);
+  grid-gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.palette {
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  padding: 0;
+  box-shadow: 0px 5px 20px rgba(128, 128, 128, 0.1);
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-flow: column;
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.palette:hover {
+  top: -5px;
+  box-shadow: 0 8px 20px rgba(128, 128, 128, 0.12);
+}
+.palette--main-color {
+  grid-column: span 6;
+}
+.palette--secondary-color {
+  grid-column: span 4;
+}
+.palette--grays {
+  grid-column: span 3;
+}
+.palette-headers {
+  grid-column: span 12;
+}
+
+.palette__info {
+  color: #333;
+  position: relative;
+  flex: 0 0 auto;
+  font-size: 14px;
+  padding: 12px;
+}
+.palette__info__hexcode {
+  margin-top: 3px;
+  font-size: 12px;
+  color: gray;
+}
+.palette__colors {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+.palette__color {
+  background: var(--bg-color);
+  height: 100%;
+  flex: 1;
+}
+.palette__shades {
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.palette__shades__item {
+  flex: 1 1 auto;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  position: relative;
+  left: 10px;
+  font-size: 80%;
+}
+.palette:hover .palette__shades {
+  flex: 0 0 33%;
+  transition: 0.2s ease;
+}
+.palette:hover .palette__shades__item {
+  opacity: 1;
+  left: 0;
+}
+.palette:hover .palette__shades__item:nth-child(1) {
+  transition: 0.2s ease 0.2s;
+}
+.palette:hover .palette__shades__item:nth-child(2) {
+  transition: 0.2s ease 0.4s;
+}
+.palette:hover .palette__shades__item:nth-child(3) {
+  transition: 0.2s ease 0.6s;
+}
+
+.font-white {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .palette-grid {
+    grid-template-rows: auto 300px auto repeat(2, 240px) auto repeat(4, 200px);
+  }
+
+  .palette--secondary-color, .palette--grays {
+    grid-column: span 6;
+  }
+}
+.palette-headers {
+  margin: 60px 0 20px;
+}
+.palette-headers h1 {
+  margin: 10px 0;
+  text-transform: uppercase;
+  font: 700 32px "Comfortaa", sans-serif;
+  letter-spacing: 4px;
+}
+.palette-headers h2 {
+  color: #999;
+  line-height: 1.5;
+}
+
+    </style>
+</head>
+<body>
+<div class="main-content">
+    <div class="palette-grid">
+        <div class="palette-headers">
+            <h1>Primary Colors</h1>
+            <h2>Main colors of the site. We're making it shine ☀️</h2>
+        </div>
+        <div class="palette palette--main-color">
+            <div class="palette__colors">
+                <div class="palette__color" style="--bg-color: #FFD151;"></div>
+                <div class="palette__shades">
+                    <div class="palette__shades__item" style="--bg-color:#FFEAAF">#FFEAAF</div>
+                    <div class="palette__shades__item" style="--bg-color:#FFE190">#FFE190</div>
+                    <div class="palette__shades__item" style="--bg-color:#FFD970">#FFD970</div>
+                </div>
+            </div>
+            <div class="palette__info">
+                <div class="palette__info__name">Mustard</div>
+                <div class="palette__info__hexcode">#FFD151</div>
+            </div>
+        </div>
+        <div class="palette palette--main-color">
+            <div class="palette__colors">
+                <div class="palette__color" style="--bg-color: #FFAE03;"></div>
+                <div class="palette__shades">
+                    <div class="palette__shades__item" style="--bg-color:#FFD275">#FFD275</div>
+                    <div class="palette__shades__item" style="--bg-color:#FFC447">#FFC447</div>
+                    <div class="palette__shades__item" style="--bg-color:#FFB519">#FFB519</div>
+                </div>
+            </div>
+            <div class="palette__info">
+                <div class="palette__info__name">UCLA Gold</div>
+                <div class="palette__info__hexcode">#FFAE03</div>
+            </div>
+        </div>
+        <div class="palette-headers">
+            <h1>Secondary Colors</h1>
+            <h2>Remaining colors that make up the palette. Also useful for status/info alerts.</h2>
+        </div>
+        <div class="palette palette--secondary-color">
+            <div class="palette__colors">
+                <div class="palette__color" style="--bg-color: #20A39E;"></div>
+                <div class="palette__shades">
+                    <div class="palette__shades__item" style="--bg-color:#71C4C1">#71C4C1</div>
+                    <div class="palette__shades__item" style="--bg-color:#48B3AF">#48B3AF</div>
+                </div>
+            </div>
+            <div class="palette__info">
+                <div class="palette__info__name">Light Sea Green</div>
+                <div class="palette__info__hexcode">#20A39E</div>
+            </div>
+        </div>
+        <div class="palette palette--secondary-color">
+            <div class="palette__colors">
+                <div class="palette__color" style="--bg-color: #EF5B5B;"></div>
+                <div class="palette__shades">
+                    <div class="palette__shades__item" style="--bg-color:#F49696">#F49696</div>
+                    <div class="palette__shades__item" style="--bg-color:#F17878">#F17878</div>
+                </div>
+            </div>
+            <div class="palette__info">
+                <div class="palette__info__name">Sunset Orange</div>
+                <div class="palette__info__hexcode">#EF5B5B</div>
+            </div>
+        </div>
+        <div class="palette palette--secondary-color">
+            <div class="palette__colors">
+                <div class="palette__color" style="--bg-color: #083D77;"></div>
+                <div class="palette__shades">
+                    <div class="palette__shades__item font-white" style="--bg-color:#6183A8">#6183A8</div>
+                    <div class="palette__shades__item font-white" style="--bg-color:#34608F">#34608F</div>
+                </div>
+            </div>
+            <div class="palette__info">
+                <div class="palette__info__name">Dark Cerulean</div>
+                <div class="palette__info__hexcode">#083D77</div>
+            </div>
+        </div>
+        <div class="palette-headers">
+            <h1>Many Shades of Gray</h1>
+            <h2>Let's try to keep the number of grays below 50.</h2>
+        </div>
+        <div class="palette palette--grays">
+            <div class="palette__color" style="--bg-color: #E8E9E9;"></div>
+            <div class="palette__info">
+                <div class="palette__info__name">Platinum</div>
+                <div class="palette__info__hexcode">#E8E9E9</div>
+            </div>
+        </div>
+        <div class="palette palette--grays">
+            <div class="palette__color" style="--bg-color: #D1D3D4;"></div>
+            <div class="palette__info">
+                <div class="palette__info__name">Light Gray</div>
+                <div class="palette__info__hexcode">#D1D3D4</div>
+            </div>
+        </div>
+        <div class="palette palette--grays">
+            <div class="palette__color" style="--bg-color: #BABDBF;"></div>
+            <div class="palette__info">
+                <div class="palette__info__name">Gray</div>
+                <div class="palette__info__hexcode">#BABDBF</div>
+            </div>
+        </div>
+        <div class="palette palette--grays">
+            <div class="palette__color" style="--bg-color: #808488;"></div>
+            <div class="palette__info">
+                <div class="palette__info__name">Old Silver</div>
+                <div class="palette__info__hexcode">#808488</div>
+            </div>
+        </div>
+        <div class="palette palette--grays">
+            <div class="palette__color" style="--bg-color: #666A6D;"></div>
+            <div class="palette__info">
+                <div class="palette__info__name">Dim Gray</div>
+                <div class="palette__info__hexcode">#666A6D</div>
+            </div>
+        </div>
+        <div class="palette palette--grays">
+            <div class="palette__color" style="--bg-color: #4D5052;"></div>
+            <div class="palette__info">
+                <div class="palette__info__name">Feldgrau</div>
+                <div class="palette__info__hexcode">#4D5052</div>
+            </div>
+        </div>
+        <div class="palette palette--grays">
+            <div class="palette__color" style="--bg-color: #333537;"></div>
+            <div class="palette__info">
+                <div class="palette__info__name">Jet</div>
+                <div class="palette__info__hexcode">#333537</div>
+            </div>
+        </div>
+        <div class="palette palette--grays">
+            <div class="palette__color" style="--bg-color: #1C1D1E;"></div>
+            <div class="palette__info">
+                <div class="palette__info__name">Eerie Black</div>
+                <div class="palette__info__hexcode">#1C1D1E</div>
+            </div>
+        </div>
+    </div>
+</div>
+<aside class="context">
+    <div class="explanation">Hover over primary & secondary colors for additional shades. <br/>Part of the <a href="https://codepen.io/collection/DQvYpQ/" target="_blank">Grid Experiment here</a>.</div>
+</aside>
+<footer><a href="https://twitter.com/meowlivia_" target="_blank"><i class="icon-social-twitter icons"></i></a><a href="https://github.com/oliviale" target="_blank"><i class="icon-social-github icons"></i></a><a href="https://dribbble.com/oliviale" target="_blank"><i class="icon-social-dribbble icons"></i></a></footer>
+</body>
+</html>

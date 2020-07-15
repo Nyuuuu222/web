@@ -34,14 +34,22 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 
 /* logo */
+.logo{
+  z-index: 99999999;
+  position: fixed;
+  left: 46%;
+  top: 85.5%;
+  display: none;
+}
 /* MAIN VARIABLES FOR CUSTOMIZATION */
 /* -------------------------------- */
 .nav {
   /* overflow: hidden; */
+  display: none;
   position: fixed;
   z-index: 9999999999999;
   left: 15%;
-  top: 5%;
+  top: 0%;
   width: auto;
   height: 100%;
   margin-top: -45px;
@@ -50,6 +58,9 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   -webkit-transform: translate3d(-50%, 0, 0);
           transform: translate3d(-50%, 0, 0);
   /* box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2); */
+}
+.nav_none{
+  
 }
 .nav__cb {
   z-index: -1000;
@@ -85,7 +96,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 .nav__item {
   display: inline-block;
   vertical-align: top;
-  
+
   width: 76px;
   text-align: center;
   color: #6C7784;
@@ -250,6 +261,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   z-index: 997;
   transition: all 0.5s;
   padding: 20px 0;
+  width: 100%;
   /* background: #1e4356; */
 }
 #header .container{
@@ -268,33 +280,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   /* border-bottom: 1px solid #ccc; */
 
 }
-.logo{
-  position: fixed;
-  z-index: 9999999;
-  top: 3%;
-  left: 2%;
-}
-/* #header .logo h1 {
-  font-size: 28px;
-  margin: 0;
-  padding: 4px 0;
-  line-height: 1;
-  font-weight: 400;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-} */
 
-/* #header .logo h1 a, #header .logo h1 a:hover {
-  color: #fff;
-  text-decoration: none;
-} */
-
-#header .logo img {
-  padding: 0;
-  margin: 0;
-  /* max-height: 40px; */
-  width: 150px;
-}
 
 #main {
   margin-top: 80px;
@@ -311,14 +297,21 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 }
 .nav-menu{
+  /* width: auto; */
+  /* margin-left: 34% !important; */
+  /* width: 506px !important; */
+}
+.nav-menu ul{
+  /* width: auto; */
   margin: 0 auto !important;
-  width: 506px !important;
+
 }
 
 .nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
   float: left;
+  margin: 0 3%;
 }
 
 .nav-menu a {

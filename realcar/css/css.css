@@ -964,6 +964,14 @@
     margin-left: 50%;
 }
 
+.footer_4, .footer_5{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(219, 219, 219);
+    line-height: 20px;
+}
+
+
 
 
 
