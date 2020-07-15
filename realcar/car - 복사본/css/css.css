@@ -1,0 +1,672 @@
+
+@font-face { font-family: 'KBIZHanmaumMyungjo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KBIZHanmaumMyungjo.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+/* logo fixed */
+.logo_box{
+    position: fixed;
+    z-index: 999;
+    top: 2%;
+    left: 1%;
+}
+.section01{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.main_img{
+    background: url('../img/sososo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 86.5vh;
+    width: 100%;
+    padding-top: 40px;
+}
+.main_txt_bg{
+    background: #ccc;
+    opacity: 0.6;
+    width: 100%;
+    height: 30vh;
+}
+.main_img_title{
+    margin-top: 1%;
+    height: 40%;
+    padding-bottom: 70px;
+    background-color: rgba(34, 32, 32, 0.301);
+}
+.main_letter1{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(44, 44, 44);
+    font-family: 'KBIZHanmaumMyungjo'; 
+    font-weight: 800;
+    padding-top: 2%;
+    letter-spacing: 20px;
+}
+.main_letter2{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'KBIZHanmaumMyungjo'; 
+    font-weight: 800;
+}
+
+.main_letter3{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(226, 225, 225);
+    font-family: 'KBIZHanmaumMyungjo'; 
+    font-weight: 500;
+}
+.main_letter3_none{
+    display: none;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(226, 225, 225);
+    font-family: 'KBIZHanmaumMyungjo'; 
+    font-weight: 500;
+
+}
+
+.main_icon{
+    padding: 1% 0;
+    background: rgb(228, 228, 228);
+}
+.row>.col-sm-12{
+    color: #fff;
+}
+.main_icon_txt1{
+    border-right: solid rgb(167, 167, 167) 1px;
+    
+}
+.main_icon_txt2{
+    border-right: solid rgb(167, 167, 167) 1px;
+}
+.main_icon_txt3{
+    border-right: solid rgb(167, 167, 167) 1px;
+}
+
+
+.main_icon .col-sm-3 .col-sm-12{
+    color: #242424;
+}
+
+.logo_box img{
+    width: 200px;
+    margin-top: -2%;
+    margin-left: 0.5%;
+}
+
+
+/* section01 end */
+
+
+/* section02 start */
+
+.section02{
+    background: #f5f2f1;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.tab-car-img img{
+}
+
+
+.tab-car-color-text>ul>li{
+    list-style: none;
+    border: 1px solid #ccc;
+    margin: 2% 4%;
+}
+.tab-car-color-text>ul{
+    display: flex;
+    padding: 0 10%;
+}
+.r2t,.e2r,.q2w,.j2f,.a2s,.y2b{
+    display: none;
+}
+.tab-car-img img{
+}
+.tab-car-color-text a{
+    display: block;
+    width: 49px;
+    height: 49px;
+}
+#wc9{
+    background: url('../img/01.png');
+
+}
+#r2t{
+    background: url('../img/02.png');
+}
+
+#e2r{
+    background: url('../img/03.png');
+}
+#q2w{
+    background: url('../img/04.png');
+}
+#j2f{
+    background: url('../img/05.png');
+}
+#a2s{
+    background:url('../img/06.png');
+}
+#y2b{
+    background: url('../img/07.png');
+}
+
+
+.wc9{
+    color: #cbcacd;
+}
+.r2t{
+    color: #7d7f85;
+}
+
+.e2r{
+    color: #7d7f85;
+}
+.q2w{
+    color: #2e343b;
+}
+.j2f{
+    color: #162640;
+}
+.a2s{
+    color: #121416;
+}
+.y2b{
+    color: #4a060b;
+}
+
+.color-txt{
+    list-style: none;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'KBIZHanmaumMyungjo';
+    margin-left: -4.3%;
+}
+.color-txt>li>p{
+    font-family: 'KBIZHanmaumMyungjo';
+
+}
+.color-txt>ul>li{
+    width: 50px;
+    height: 50px;
+    margin: 10px 5px;
+}
+.color-main-txt{
+    margin-top: 3%;
+}
+.color-main-txt>h1{
+    font-size: 50px;
+    font-weight: 800;
+    color: #333333;
+    letter-spacing: 15px;
+    font-family: 'KBIZHanmaumMyungjo';
+}
+.color-main-txt>h4{
+    font-family: 'KBIZHanmaumMyungjo';
+    font-size: 30px;
+    color: rgb(102, 102, 102);
+
+}
+.color-add-txt{
+    /* padding-left: 6%; */
+    padding-top: 0;
+    color: rgb(179, 179, 179);
+}
+
+/* section02 end */
+
+/* section03 start */
+.section03{
+    background: white;
+    font-family: 'KBIZHanmaumMyungjo';
+    width: 100%;
+    height: 100vh;
+}
+
+
+.sec03_row1{
+    margin-top: 2%;
+}
+.section03 h1{
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+.section03 p{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(151, 151, 151);
+}
+.imgimg{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-style:none;
+    position: relative;
+     box-sizing: border-box;
+}
+
+.sec03_nav_box{
+    margin:5% 20%;
+}
+.exterior_btn a{
+    font-weight: 800;
+    font-family: 'KBIZHanmaumMyungjo';
+}
+
+.interior_btn a{
+    font-weight: 800;
+    font-family: 'KBIZHanmaumMyungjo';
+}
+.tab-content{
+    margin-top: 2%;
+}
+.modal{
+    position: absolute;
+
+}
+.modal_box{
+    margin: 0 auto;
+    width: 448px;
+}
+.modal_txt{
+    width: 448px;
+    /* border: 10px solid #242424; */
+    background: #242424;
+    padding: 1% 10%;
+}
+.modal_txt h3{
+    font-size: 23px;
+    margin-top: 10px;
+}
+.modal_txt p{
+    font-size: 16px;
+}
+
+
+
+/* modal tab modified*/
+.nav{
+    width: 100%;
+}
+.nav>li{
+    width: 50%;
+}
+.nav>li>a {
+    width: 100%;
+    /* position: relative; */
+    display: block;
+    padding: 10px 15px;
+}
+
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 4px 4px 0px 0px;
+    font-size: 25px;
+    padding: 10px 15px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    font-size: 25px;
+}
+
+/* modal tab end */
+
+
+.point .bg{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 171, 107, 0.12);
+    -webkit-border-radious: 50%;
+    border-radius: 50%;
+    animation: record-lg 1.5s ease-in-out infinite;
+}
+.point .dot{
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    margin-left: -8px;
+    background-color: #007fa8;
+    border: 1px solid #99cada;
+    box-shadow: 0 0 5px #fff;
+    border-radius: 50%;
+    animation: dot-effec 1.5s ease-in-out infinite;
+
+}
+@keyframes dot-effec {
+
+
+    0% {
+        opacity:  0;
+        transform: scale(.5);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    }
+    
+    @keyframes record-lg {
+    
+    
+        0% {
+            opacity:  .5;
+            transform: scale(.5);
+        }
+        50%{
+            opacity: 1;
+            transform: scale(1);
+        }
+        100%{
+            opacity: .5;
+            transform: scale(1);
+        }
+        }
+    
+    .point.point-1{
+        top: 35.3%;
+        left: 63.5%;
+    }
+    
+    .point.point-2{
+        top: 58.5%;
+        left: 49.3%;
+    }
+    
+    .point.point-3{
+        top: 53.3%;
+        left: 62%;
+    }
+    
+    .point.point-4{
+        top: 41%;
+        left: 75.1%;
+    }
+    .point.point-5{
+        top: 36%;
+        left: 38%;
+    }
+    .point.point-6{
+        top: 48%;
+        left: 35.7%;
+    }
+    .point.point-7{
+        top: 70%;
+        left: 46.3%;
+    }
+    .point.point-8{
+        top: 49.2%;
+        left: 61.1%;
+    }
+
+    
+    .point{
+        cursor: pointer;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+    }
+    
+   
+    .introduction{
+        padding-top: 100px;
+    }
+
+
+ 
+
+
+
+
+/* section 03 end */
+/* section 04 start*/
+
+.section04{
+    width: 100%;
+    height: 1080px;
+    margin-top: -900px;
+    background: #f5f2f1;
+    font-family: 'KBIZHanmaumMyungjo';
+}
+.sec04_main_txt{
+}
+.sec04_main_txt h1{
+    font-weight: 800;
+    font-size: 36px;
+    letter-spacing: 15px;
+    margin-top: 5%;
+}
+.sec04_main_txt p{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(151, 151, 151);
+}
+.sec04_img{
+    position: relative;
+    width: 59.8%;
+}
+.sec04_slide1 img{
+    padding-bottom: 0.3%;
+}
+
+.point.point-9{
+    top: 77.1%;
+    left: 34.45%;
+}
+.point.point-10{
+    top: 48%;
+    left: 35.7%;
+}
+.point.point-11{
+    top: 70%;
+    left: 46.3%;
+}
+.point.point-12{
+    top: 49.2%;
+    left: 61.1%;
+}
+.owl-carousel{
+    background-color: white;
+    
+}
+
+
+/* section 04 end */
+/* section 05 start */
+
+.section05{
+    width: 100%;
+    height: 100vh;
+    background: white;
+    font-family: 'KBIZHanmaumMyungjo';
+}
+.sec05_main_txt h1{
+    font-weight: 800;
+    font-size: 36px;
+    letter-spacing: 15px;
+    margin-top: 10%;
+}
+.sec05_main_txt p{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(151, 151, 151);
+}
+.sp-thumbnail-title{
+    text-align: center;
+}
+
+
+
+/* section 05 end */
+/* section 06 start */
+.section06{
+    width: 100%;
+    height: 100vh;
+    background: #f5f2f1;
+    font-family: 'KBIZHanmaumMyungjo';
+}
+
+.sec6_title{
+    font-weight: 800;
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin-top: 10%;
+}
+.sec6_txt{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(151, 151, 151);
+}
+.carousel{
+    margin-top: 6%;
+}
+.carousel-control{
+    opacity: 0;
+}
+
+.carousel-control:hover{
+    opacity: 0.6;
+    color: #007fa8;
+}
+
+/* .carousel-indicators li{
+
+    background-color: #007fa8;
+    border: 1px solid #99cada;
+    box-shadow: 0 0 5px #fff;
+    border-radius: 50%;
+}
+.carousel-indicators .active{
+
+    background-color: #007fa8;
+    border: 1px solid #99cada;
+    box-shadow: 0 0 5px #fff;
+    border-radius: 50%;
+} */
+.item .col-sm-6{
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.item h1{
+    font-size: 30px;
+    font-family: 'KBIZHanmaumMyungjo';
+    font-weight: 800;
+    padding-top: 5%;
+}
+.item p{
+    font-size: 17px;
+    font-family: 'KBIZHanmaumMyungjo';
+    padding: 0 3% 0 0;
+    color: rgb(151, 151, 151);;
+}
+@media(max-width:800px){
+    .tab-car-img img{
+        width: 100%;
+    }
+}
+
+@media(max-width:768px){
+
+    .main_img{
+         padding-top: 80px;
+         height: 58vh;
+    }
+    .main_letter1{
+        font-size: 30px;
+    }
+    .main_letter2{
+        font-size: 28px;
+    }
+    .main_letter3{
+        display: none;
+    }
+    .main_letter3_none{
+        display: block;
+        font-size: 17px;
+    }
+    .tab-car-img img{
+        width: 100%;
+    }
+    .color-main-txt h1{
+        margin-top: 50%;
+    }
+    .tab-car-color-text a{
+        display: block;
+        width: 25px;
+        height: 25px;
+    }
+    .sec02_txt{
+        margin-top: -20%!important;
+    }
+
+/* sectione02 end */
+
+/* section03 start */
+
+.sec03_nav_box{
+    width: 90%;
+    margin: 18% auto 0;
+}
+    /* modal tab modified*/
+.nav{
+    width: 100%;
+}
+.nav>li{
+    width: 50%;
+}
+.nav>li>a {
+    width: 100%;
+    /* position: relative; */
+    display: block;
+    padding: 10px 15px;
+}
+
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 4px 4px 0px 0px;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    font-size: 16px;
+}
+
+/* modal tab end */
+.sec03_row1 h1{
+    font-size: 24px;
+}
+.sec03_row1 p{
+    font-size: 16px;
+}
+
+}
