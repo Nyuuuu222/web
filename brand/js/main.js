@@ -1,14 +1,10 @@
 
 // scroll logo menu
 $(window).scroll(function () {
-    if($(window).scrollTop() < 550) {
-     $('.nav').fadeOut();
-     $('.nav_none').fadeIn();
-     $('.logo').fadeOut();
+    if($(window).scrollTop() < 150) {
+     $('.logo').fadeOut(700);
     } else {
-     $('.nav').fadeIn();
-     $('.nav_none').fadeOut();
-     $('.logo').fadeIn();
+     $('.logo').fadeIn(700);
     }
    });
 

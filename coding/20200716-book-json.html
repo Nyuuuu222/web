@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(function(){
+            $.getJSON('20200716_book.json',function(data){
+                var books = data.book;
+                $(books).each(function(i,obj){
+                    var title = obj.title;
+                    var author = obj.author;
+                    var price = obj.price;
+                    var txt = "<li>" + title + "," + author + "," + price + "</li><hr>";
+                    $('body').append(txt);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
