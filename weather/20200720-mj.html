@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div id="weather_info">
+        <h1 class="city"></h1>
+        <section>
+            <p class="w_id"></p>
+            <figure class="icon">
+            </figure>
+            <p class="temp"></p>
+            <aside>
+                <p class="temp-max">max</p>
+                <p class="temp-min">min</p>
+            </aside>
+        </section>
+        <img class="load_img" src="img/loading.svg" width="50">
+    </div>
+
+    <script>
+        var url = 'http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=670bf5d30cda72bc335154412e500db7';
+
+        $('weather_info .load_img').show();
+        $.getJSON(url, function(data) {
+            // 날씨 데이터 객체
+            var sys = data.sys;             //국가명, 일출/일몰
+            var city = data.name;           //도시명
+            var weather = data.weather;     //날씨 객체
+            var main = data.main;           //온도 기압 관련 객체
+
+            var wmain = weather[0].main;    //구름 상태(Cloudiness)
+            var w_id = weather[0].id;       //날씨 상태 id 코드
+            var icon = weather[0].icon;     //날씨 아이콘 정보
+            var country = sys.country;      //국가명
+            var temp = main.temp;           // 현재 온도
+            var temp_min = main.temp_min;   // 최저 온도
+            var temp_max = main.temp_max;   // 최고 온도
+            
+            // 날씨 아이콘
+            var icon_url = 'http://openwathermap.org/img/w/' + icon;
+
+            // 날씨정보표시
+            $('#weather_info > .city').html(city + "/" + country);
+            $('#weather_info > .icon').html("<img src'" + icon_url + ".png'>");
+            $('#weather_info .w_id').html(wmain);
+            $('weater_info .temp_min').html(parseInt(temp_min-273.15) + '&deg;' + 'min');
+            $('#weather_info .temp_max').html(parseInt(temp_max-273.15) + '&deg;' + 'max');
+            $('#weather_info .temp').html(parseInt(temp_min-273.15) + '&deg;');
+            // 데이터 로딩 후 로딩이미지 제거
+            $('#weather_info .load_img').hide();
+        });
+
+        // end getJSON
+        .fail(function(){
+            // 오류 메시지
+            alert("loading error");
+        });
+
+
+
+
+        
+
+    </script>
+</body>
+</html>

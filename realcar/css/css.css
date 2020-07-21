@@ -882,7 +882,8 @@
     font-family: 'KBIZHanmaumMyungjo';
 }
 .sec09_main_txt{
-    padding-top: 3%;
+    /* padding-top: 3%; */
+    padding-top: 60px;
 }
 .sec09_main_txt>h1{
     font-weight: 900;

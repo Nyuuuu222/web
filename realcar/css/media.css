@@ -303,6 +303,10 @@
     .sec08_main_txt>p{
         font-size: 18px;
     }
+    .sec_08_vd .sp-thumbnail{
+        width: 140px !important;
+        height: 80px !important;
+    }
 }
 @media(max-width:800px){
     .tab-car-img img{
@@ -545,7 +549,9 @@
     font-size: 18px;
     margin-bottom: -3%!important;
 }
-
+.sec09_main_txt>h1{
+    font-size: 30px !important;
+}
 }
 
 

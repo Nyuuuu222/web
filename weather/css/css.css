@@ -1,0 +1,92 @@
+*{
+    margin:0; 
+    padding:0;
+    font-weight: normal;
+}
+p{
+    margin-bottom: 10px;
+}
+body{
+    color:#333;
+    font-size: 100%;
+    font-family:sans-serif;
+
+}
+
+#gradient
+{
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
+.icon{
+    font-size: 200px ;
+    
+}
+
+.icon img{
+    /* width:200px; */
+}
+
+#weather_info{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* border:1px solid #999; */
+    box-sizing: border-box;
+    /* padding:10px; */
+    background:rgba(247, 197, 156, 0.459);
+    color:white;
+}
+h1{
+    background:rgba(156, 218, 247, 0.37);
+    border-radius: 100px;
+    width: 200px;
+    font-size:1.8em;
+    text-align: center;
+    margin: 5% auto;
+    padding: 2% 0;
+    /* opacity: 0.8; */
+
+}
+section{
+    /* overflow: hidden; */
+    width: 100%;
+    color:rgb(255, 255, 255);
+}
+.icon_box{
+    width:200px;
+    margin: 0 auto;
+    padding-top: 80px;
+
+}
+section .w_id{
+    margin-top: 40px;
+    text-align: center;
+
+}
+section>figure, section>.temp{
+    float: left;
+    width: 45%;
+}
+.body_center{
+    text-align: center; 
+}
+.body_center>.temp{
+    font-size: 3.4em;
+}
+aside{
+    overflow: hidden;
+}
+aside>p{
+    font-size:1.7em;
+    text-align: center;
+}
+/* 로딩이미지 */
+#weather_info .load img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display:none;
+}
